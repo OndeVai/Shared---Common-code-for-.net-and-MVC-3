@@ -8,6 +8,7 @@ namespace Shared.Domain.Security.Services
 {
     public interface IMembershipService
     {
+        //test git
         int MinRequiredPasswordLength { get; }
 
         bool ValidateUser(MembershipUserValidateRequest validateUserRequest);
