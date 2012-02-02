@@ -1,0 +1,8 @@
+C:\_custom\shared\ronin.ServiceModel.Syndication\bin\Debug\ronin.ServiceModel.Syndication.dll
+C:\_custom\shared\ronin.ServiceModel.Syndication\bin\Debug\ronin.ServiceModel.Syndication.pdb
+C:\_custom\shared\ronin.ServiceModel.Syndication\bin\Debug\ronin.dll
+C:\_custom\shared\ronin.ServiceModel.Syndication\bin\Debug\AutoMapper.dll
+C:\_custom\shared\ronin.ServiceModel.Syndication\bin\Debug\ronin.pdb
+C:\_custom\shared\ronin.ServiceModel.Syndication\obj\Debug\ResolveAssemblyReference.cache
+C:\_custom\shared\ronin.ServiceModel.Syndication\obj\Debug\ronin.ServiceModel.Syndication.dll
+C:\_custom\shared\ronin.ServiceModel.Syndication\obj\Debug\ronin.ServiceModel.Syndication.pdb

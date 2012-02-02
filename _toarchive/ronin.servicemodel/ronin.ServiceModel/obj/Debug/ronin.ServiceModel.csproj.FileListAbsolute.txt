@@ -1,0 +1,11 @@
+C:\_custom\shared\ronin.servicemodel\ronin.ServiceModel\bin\Debug\ronin.ServiceModel.dll
+C:\_custom\shared\ronin.servicemodel\ronin.ServiceModel\bin\Debug\ronin.ServiceModel.pdb
+C:\_custom\shared\ronin.servicemodel\ronin.ServiceModel\obj\Debug\ResolveAssemblyReference.cache
+C:\_custom\shared\ronin.servicemodel\ronin.ServiceModel\obj\Debug\ronin.ServiceModel.dll
+C:\_custom\shared\ronin.servicemodel\ronin.ServiceModel\obj\Debug\ronin.ServiceModel.pdb
+C:\_custom\shared\ronin.servicemodel\ronin.ServiceModel\bin\Debug\ronin.Domain.dll
+C:\_custom\shared\ronin.servicemodel\ronin.ServiceModel\bin\Debug\ronin.Domain.pdb
+C:\_custom\shared\ronin.servicemodel\ronin.ServiceModel\bin\Debug\AutoMapper.dll
+C:\_custom\shared\ronin.servicemodel\ronin.ServiceModel\bin\Debug\ronin.dll
+C:\_custom\shared\ronin.servicemodel\ronin.ServiceModel\bin\Debug\ronin.pdb
+C:\_custom\shared\ronin.servicemodel\ronin.ServiceModel\bin\Debug\Elmah.dll

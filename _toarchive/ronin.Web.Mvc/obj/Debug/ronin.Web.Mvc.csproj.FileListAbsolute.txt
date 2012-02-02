@@ -1,0 +1,15 @@
+C:\_custom\shared\ronin.Web.Mvc\bin\Debug\ronin.Web.Mvc.dll
+C:\_custom\shared\ronin.Web.Mvc\bin\Debug\ronin.Web.Mvc.pdb
+C:\_custom\shared\ronin.Web.Mvc\bin\Debug\Ninject.dll
+C:\_custom\shared\ronin.Web.Mvc\bin\Debug\Ninject.pdb
+C:\_custom\shared\ronin.Web.Mvc\bin\Debug\Ninject.xml
+C:\_custom\shared\ronin.Web.Mvc\obj\Debug\ResolveAssemblyReference.cache
+C:\_custom\shared\ronin.Web.Mvc\obj\Debug\ronin.Web.Mvc.dll
+C:\_custom\shared\ronin.Web.Mvc\obj\Debug\ronin.Web.Mvc.pdb
+C:\_custom\shared\ronin.Web.Mvc\bin\Debug\ronin.dll
+C:\_custom\shared\ronin.Web.Mvc\bin\Debug\ronin.Domain.dll
+C:\_custom\shared\ronin.Web.Mvc\bin\Debug\AutoMapper.dll
+C:\_custom\shared\ronin.Web.Mvc\bin\Debug\ronin.Domain.pdb
+C:\_custom\shared\ronin.Web.Mvc\bin\Debug\ronin.pdb
+C:\_custom\shared\ronin.Web.Mvc\bin\Debug\Recaptcha.dll
+C:\_custom\shared\ronin.Web.Mvc\bin\Debug\Recaptcha.pdb

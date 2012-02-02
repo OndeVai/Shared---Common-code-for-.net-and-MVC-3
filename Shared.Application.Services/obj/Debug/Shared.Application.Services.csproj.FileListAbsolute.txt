@@ -1,0 +1,10 @@
+C:\_custom\projects\xylem\freshexpress-gain\development\Shared.Application.Services\bin\Debug\Shared.Application.Services.dll
+C:\_custom\projects\xylem\freshexpress-gain\development\Shared.Application.Services\bin\Debug\Shared.Application.Services.pdb
+C:\_custom\projects\xylem\freshexpress-gain\development\Shared.Application.Services\obj\Debug\ResolveAssemblyReference.cache
+C:\_custom\projects\xylem\freshexpress-gain\development\Shared.Application.Services\obj\Debug\Shared.Application.Services.dll
+C:\_custom\projects\xylem\freshexpress-gain\development\Shared.Application.Services\obj\Debug\Shared.Application.Services.pdb
+C:\_custom\shared\shared_4.0\Shared.Application.Services\bin\Debug\Shared.Application.Services.dll
+C:\_custom\shared\shared_4.0\Shared.Application.Services\bin\Debug\Shared.Application.Services.pdb
+C:\_custom\shared\shared_4.0\Shared.Application.Services\obj\Debug\ResolveAssemblyReference.cache
+C:\_custom\shared\shared_4.0\Shared.Application.Services\obj\Debug\Shared.Application.Services.dll
+C:\_custom\shared\shared_4.0\Shared.Application.Services\obj\Debug\Shared.Application.Services.pdb

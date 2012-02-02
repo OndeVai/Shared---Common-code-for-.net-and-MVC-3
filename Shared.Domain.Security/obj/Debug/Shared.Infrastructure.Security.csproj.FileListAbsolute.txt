@@ -1,0 +1,5 @@
+C:\_custom\shared\shared_4.0\Shared.Domain.Security\bin\Debug\Shared.Domain.Security.dll
+C:\_custom\shared\shared_4.0\Shared.Domain.Security\bin\Debug\Shared.Domain.Security.pdb
+C:\_custom\shared\shared_4.0\Shared.Domain.Security\obj\Debug\ResolveAssemblyReference.cache
+C:\_custom\shared\shared_4.0\Shared.Domain.Security\obj\Debug\Shared.Domain.Security.dll
+C:\_custom\shared\shared_4.0\Shared.Domain.Security\obj\Debug\Shared.Domain.Security.pdb

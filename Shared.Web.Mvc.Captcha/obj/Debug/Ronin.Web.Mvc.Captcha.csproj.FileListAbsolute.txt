@@ -1,0 +1,7 @@
+C:\_custom\shared\shared_4.0\Ronin.Web.Mvc.Captcha\bin\Debug\Ronin.Web.Mvc.Captcha.dll
+C:\_custom\shared\shared_4.0\Ronin.Web.Mvc.Captcha\bin\Debug\Ronin.Web.Mvc.Captcha.pdb
+C:\_custom\shared\shared_4.0\Ronin.Web.Mvc.Captcha\bin\Debug\Recaptcha.dll
+C:\_custom\shared\shared_4.0\Ronin.Web.Mvc.Captcha\bin\Debug\Recaptcha.pdb
+C:\_custom\shared\shared_4.0\Ronin.Web.Mvc.Captcha\obj\Debug\ResolveAssemblyReference.cache
+C:\_custom\shared\shared_4.0\Ronin.Web.Mvc.Captcha\obj\Debug\Ronin.Web.Mvc.Captcha.dll
+C:\_custom\shared\shared_4.0\Ronin.Web.Mvc.Captcha\obj\Debug\Ronin.Web.Mvc.Captcha.pdb

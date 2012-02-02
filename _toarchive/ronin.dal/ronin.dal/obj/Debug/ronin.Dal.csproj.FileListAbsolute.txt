@@ -1,0 +1,5 @@
+C:\_custom\shared\ronin.dal\ronin.dal\bin\Debug\ronin.dal.dll
+C:\_custom\shared\ronin.dal\ronin.dal\bin\Debug\ronin.dal.pdb
+C:\_custom\shared\ronin.dal\ronin.dal\obj\Debug\ResolveAssemblyReference.cache
+C:\_custom\shared\ronin.dal\ronin.dal\obj\Debug\ronin.dal.dll
+C:\_custom\shared\ronin.dal\ronin.dal\obj\Debug\ronin.dal.pdb

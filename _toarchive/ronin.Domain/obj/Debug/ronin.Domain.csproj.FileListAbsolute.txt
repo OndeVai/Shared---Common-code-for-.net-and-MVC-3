@@ -1,0 +1,8 @@
+C:\_custom\shared\ronin.Domain\bin\Debug\ronin.Domain.dll
+C:\_custom\shared\ronin.Domain\bin\Debug\ronin.Domain.pdb
+C:\_custom\shared\ronin.Domain\obj\Debug\ResolveAssemblyReference.cache
+C:\_custom\shared\ronin.Domain\obj\Debug\ronin.Domain.dll
+C:\_custom\shared\ronin.Domain\obj\Debug\ronin.Domain.pdb
+C:\_custom\shared\ronin.Domain\bin\Debug\ronin.dll
+C:\_custom\shared\ronin.Domain\bin\Debug\AutoMapper.dll
+C:\_custom\shared\ronin.Domain\bin\Debug\ronin.pdb
