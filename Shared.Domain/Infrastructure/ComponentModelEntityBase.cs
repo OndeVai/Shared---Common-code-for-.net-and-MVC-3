@@ -3,8 +3,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Shared.Domain.Infrastructure
 {
-    public class ComponentModelEntityBase : EntityBase
+    public abstract class ComponentModelEntityBase : EntityBase
     {
+       
 
         protected override void Validate()
         {

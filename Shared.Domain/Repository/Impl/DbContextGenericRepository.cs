@@ -6,17 +6,18 @@ using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
 using Shared.Domain.Infrastructure;
+using Shared.Linq;
+using System.Linq.Dynamic;
 
 #endregion
 
 namespace Shared.Domain.Repository.Impl
 {
-    // ReSharper disable UnusedMember.Global
+
     public abstract class DbContextGenericRepository<TDBContext, TModel> :
-        // ReSharper restore UnusedMember.Global
         IGenericRepository<TModel>
-        where TModel : class
-        where TDBContext : DbContext, IUnitOfWork, new()
+        where TModel : class, IAggregateRoot
+        where TDBContext : DbContext, IUnitOfWork
     {
         private bool _disposed;
         private TDBContext _entities;
@@ -26,9 +27,7 @@ namespace Shared.Domain.Repository.Impl
             _entities = entities;
         }
 
-        // ReSharper disable UnusedMember.Global
         protected TDBContext Context
-        // ReSharper restore UnusedMember.Global
         {
             get { return _entities; }
             set { _entities = value; }
@@ -36,10 +35,25 @@ namespace Shared.Domain.Repository.Impl
 
         #region IGenericRepository<TModel> Members
 
+        public int GetCount()
+        {
+            return GetAll().Count();
+        }
+
         public virtual IQueryable<TModel> GetAll()
         {
             IQueryable<TModel> query = _entities.Set<TModel>();
             return query;
+        }
+
+        public IQueryable<TModel> GetAll<TValue>(Expression<Func<TModel, TValue>> orderBy, int pageNumber, int pageSize)
+        {
+            return GetAll().OrderBy(orderBy).Page(pageNumber, pageSize);
+        }
+
+        public IQueryable<TModel> GetAll(string orderBy, int pageNumber, int pageSize)
+        {
+            return null;
         }
 
         public IQueryable<TModel> FindBy(Expression<Func<TModel, bool>> predicate)
@@ -78,5 +92,7 @@ namespace Shared.Domain.Repository.Impl
 
             _disposed = true;
         }
+
+        public abstract void MarkForSave(TModel model);
     }
 }

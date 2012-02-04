@@ -39,6 +39,9 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Linq.Dynamic">
+      <HintPath>..\..\..\projects\xylem\chiquita_qr\development\packages\System.Linq.Dynamic.1.0.0\lib\net40\System.Linq.Dynamic.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -50,6 +53,7 @@
     <Compile Include="Infrastructure\BusinessRuleException.cs" />
     <Compile Include="Infrastructure\ComponentModelEntityBase.cs" />
     <Compile Include="Infrastructure\EntityBase.cs" />
+    <Compile Include="Infrastructure\IAggregateRoot.cs" />
     <Compile Include="Infrastructure\IUnitOfWork.cs" />
     <Compile Include="Infrastructure\ValueObjectBase.cs" />
     <Compile Include="Infrastructure\ValueObjectIsInvalidException.cs" />
@@ -59,8 +63,14 @@
     <Compile Include="Repository.Legacy\ObjectContextExtensions.cs" />
     <Compile Include="Repository\Impl\DbContextGenericRepository.cs" />
     <Compile Include="Repository\IGenericRepository.cs" />
+    <Compile Include="Repository\Impl\EntityDBContextGenericRepository.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Shared\Shared.csproj">
+      <Project>{A39B2E8C-B736-4EC2-90F8-0D006EE9F27F}</Project>
+      <Name>Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
