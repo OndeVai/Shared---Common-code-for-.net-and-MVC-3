@@ -8,7 +8,7 @@ namespace Shared.Linq
 {
     public static class OrderedQueryableExtensions
     {
-        public static IQueryable<TEntity> PageThis<TEntity>(this IQueryable<TEntity> queryable, int pageNumber, int pageSize)
+        public static IQueryable<TEntity> Page<TEntity>(this IQueryable<TEntity> queryable, int pageNumber, int pageSize)
         {
             return queryable
                 .Skip(pageSize * (pageNumber - 1))

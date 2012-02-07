@@ -13,7 +13,7 @@ namespace Shared.Domain.Repository.Impl
         {
         }
 
-        public TModel Find(int id)
+        public virtual TModel Find(int id)
         {
             return FindBy(e => e.Id == id).FirstOrDefault();
         }

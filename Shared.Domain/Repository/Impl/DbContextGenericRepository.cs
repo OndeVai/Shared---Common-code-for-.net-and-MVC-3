@@ -46,14 +46,14 @@ namespace Shared.Domain.Repository.Impl
             return query;
         }
 
-        public IQueryable<TModel> GetAll<TValue>(Expression<Func<TModel, TValue>> orderBy, int pageNumber, int pageSize)
+        public virtual IQueryable<TModel> GetAll<TValue>(Expression<Func<TModel, TValue>> orderBy, int pageNumber, int pageSize)
         {
             return GetAll().OrderBy(orderBy).Page(pageNumber, pageSize);
         }
 
-        public IQueryable<TModel> GetAll(string orderBy, int pageNumber, int pageSize)
+        public virtual IQueryable<TModel> GetAll(string orderBy, int pageNumber, int pageSize)
         {
-            return null;
+            return GetAll().OrderBy(orderBy).Page(pageNumber, pageSize);
         }
 
         public IQueryable<TModel> FindBy(Expression<Func<TModel, bool>> predicate)

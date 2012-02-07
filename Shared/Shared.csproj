@@ -49,6 +49,7 @@
     <Compile Include="BoolExtensions.cs" />
     <Compile Include="DateTimeExtensions.cs" />
     <Compile Include="Diagnostics\ILoggerAdapter.cs" />
+    <Compile Include="DoubleExtensions.cs" />
     <Compile Include="IO\ZipFile.cs" />
     <Compile Include="Linq\OrderedQueryableExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
