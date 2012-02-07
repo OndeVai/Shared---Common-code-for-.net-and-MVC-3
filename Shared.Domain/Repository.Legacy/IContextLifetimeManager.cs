@@ -1,4 +1,4 @@
-﻿namespace FreshExpress.Gain.Domain.Repositories
+﻿namespace Shared.Domain.Repository.Legacy
 {
     public interface IContextLifetimeManager
     {

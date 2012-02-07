@@ -5,7 +5,7 @@ using System.Web.Security;
 
 #endregion
 
-namespace FreshExpress.Gain.Web.Util.Security.Impl
+namespace Shared.Web.Security.Services.Impl
 {
     public class AspNetFormsAuthenticationService : IFormsAuthenticationService
     {

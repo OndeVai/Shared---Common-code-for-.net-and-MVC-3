@@ -1,4 +1,4 @@
-﻿namespace FreshExpress.Gain.Web.Util.Security
+﻿namespace Shared.Web.Security.Services
 {
     public interface IFormsAuthenticationService
     {

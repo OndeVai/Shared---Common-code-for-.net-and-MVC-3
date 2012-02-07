@@ -9,7 +9,7 @@ using System.Linq;
 
 #endregion
 
-namespace FreshExpress.Gain.Domain.Repositories.Impl.Base
+namespace Shared.Domain.Repository.Legacy
 {
     public static class ObjectContextExtensions
     {

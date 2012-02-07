@@ -54,6 +54,7 @@
     <Compile Include="Infrastructure\ComponentModelEntityBase.cs" />
     <Compile Include="Infrastructure\EntityBase.cs" />
     <Compile Include="Infrastructure\IAggregateRoot.cs" />
+    <Compile Include="Infrastructure\IEntityValidator.cs" />
     <Compile Include="Infrastructure\IUnitOfWork.cs" />
     <Compile Include="Infrastructure\ValueObjectBase.cs" />
     <Compile Include="Infrastructure\ValueObjectIsInvalidException.cs" />

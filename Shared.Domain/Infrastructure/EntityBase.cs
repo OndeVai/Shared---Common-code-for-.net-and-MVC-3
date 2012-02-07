@@ -4,8 +4,7 @@ namespace Shared.Domain.Infrastructure
 {
     public abstract class EntityBase
     {
-
-
+        
         private readonly List<BusinessRule> _brokenRules = new List<BusinessRule>();
 
         protected abstract void Validate();
@@ -21,6 +20,12 @@ namespace Shared.Domain.Infrastructure
         {
             _brokenRules.Add(businessRule);
         }
+    }
+
+    public abstract class EntityBase<TID> : EntityBase
+    {
+        public virtual TID Id { get; protected set; }
+      
     }
 
 }

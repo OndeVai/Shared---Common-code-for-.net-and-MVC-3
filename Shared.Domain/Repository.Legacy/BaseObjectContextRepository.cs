@@ -3,8 +3,6 @@
 using System;
 using System.Data;
 using System.Data.Objects;
-using FreshExpress.Gain.Domain.Repositories;
-using FreshExpress.Gain.Domain.Repositories.Impl.Base;
 
 #endregion
 

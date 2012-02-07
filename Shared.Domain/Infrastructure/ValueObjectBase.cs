@@ -8,19 +8,16 @@ using System.Text;
 
 namespace Shared.Domain.Infrastructure
 {
-    // ReSharper disable UnusedMember.Global
+
     public abstract class ValueObjectBase
-    // ReSharper restore UnusedMember.Global
     {
         private readonly List<BusinessRule> _brokenRules = new List<BusinessRule>();
 
-        // ReSharper disable PublicConstructorInAbstractClass
 
         protected abstract void Validate();
 
-        // ReSharper disable UnusedMember.Global
+
         public void ThrowExceptionIfInvalid()
-        // ReSharper restore UnusedMember.Global
         {
             _brokenRules.Clear();
             Validate();
@@ -33,9 +30,7 @@ namespace Shared.Domain.Infrastructure
             }
         }
 
-        // ReSharper disable UnusedMember.Global
         protected void AddBrokenRule(BusinessRule businessRule)
-        // ReSharper restore UnusedMember.Global
         {
             _brokenRules.Add(businessRule);
         }
