@@ -1,15 +1,15 @@
 ﻿#region
 
 using System;
-using Shared.Application.Services.Dto;
+using Shared.Application.Infrastructure.Navigation.Dto;
 
 #endregion
 
-namespace Shared.Application.Services.Infrastructure.Helpers
+namespace Shared.Application.Infrastructure.Navigation.Helpers
 {
     public static class PagingExtensions
     {
-        public static PagingInfo AdjustForCountOf(this PagingInfo pagingInfo, int totalListCount)
+        public static void AdjustForCountOf(this PagingInfo pagingInfo, int totalListCount)
         {
             var currentPage = pagingInfo.CurrentPage;
             var pageSize = pagingInfo.ItemsPerPage;
@@ -19,7 +19,7 @@ namespace Shared.Application.Services.Infrastructure.Helpers
             var totalPageCount = (int)Math.Ceiling((double)totalListCount / pageSize);
             if (currentPage > totalPageCount) currentPage = totalPageCount;
 
-            return new PagingInfo { CurrentPage = currentPage, ItemsPerPage = pageSize, TotalItems = totalListCount, TotalPages = totalPageCount };
+            pagingInfo = new PagingInfo { CurrentPage = currentPage, ItemsPerPage = pageSize, TotalItems = totalListCount, TotalPages = totalPageCount };
         }
     }
 }

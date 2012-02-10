@@ -5,7 +5,10 @@ namespace Shared.Domain.Infrastructure
 {
     public abstract class ComponentModelEntityBase<TID> : EntityBase<TID>
     {
-        
+        protected ComponentModelEntityBase(TID id) : base(id)
+        {
+        }
+
         protected override void Validate()
         {
             var ctx = new ValidationContext(this, null, null);

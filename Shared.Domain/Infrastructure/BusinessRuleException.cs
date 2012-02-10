@@ -10,6 +10,11 @@ namespace Shared.Domain.Infrastructure
 {
     public class BusinessRuleException : Exception
     {
+        public BusinessRuleException(string rule)
+            : this("", new[] { new BusinessRule(rule) })
+        {
+        }
+
         public BusinessRuleException(string modelErrorMessage, IEnumerable<BusinessRule> businessRules)
         {
             var brokenRules = new StringBuilder(modelErrorMessage);

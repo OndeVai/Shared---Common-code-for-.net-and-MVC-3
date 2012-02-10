@@ -14,7 +14,7 @@ using System.Linq.Dynamic;
 namespace Shared.Domain.Repository.Impl
 {
 
-    public abstract class DbContextGenericRepository<TDBContext, TModel> :
+    public abstract class DbContextRepository<TDBContext, TModel> :
         IGenericRepository<TModel>
         where TModel : class, IAggregateRoot
         where TDBContext : DbContext, IUnitOfWork
@@ -22,7 +22,7 @@ namespace Shared.Domain.Repository.Impl
         private bool _disposed;
         private TDBContext _entities;
 
-        protected DbContextGenericRepository(TDBContext entities)
+        protected DbContextRepository(TDBContext entities)
         {
             _entities = entities;
         }

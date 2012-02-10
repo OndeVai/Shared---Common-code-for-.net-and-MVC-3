@@ -4,11 +4,11 @@ using Shared.Domain.Infrastructure;
 
 namespace Shared.Domain.Repository.Impl
 {
-    public abstract class EntityDBContextGenericRepository<TDBContext, TModel> : DbContextGenericRepository<TDBContext, TModel>
+    public abstract class EntityDBContextRepository<TDBContext, TModel> : DbContextRepository<TDBContext, TModel>
         where TModel : EntityBase<int>, IAggregateRoot, new()
         where TDBContext : DbContext, IUnitOfWork
     {
-        protected EntityDBContextGenericRepository(TDBContext entities)
+        protected EntityDBContextRepository(TDBContext entities)
             : base(entities)
         {
         }

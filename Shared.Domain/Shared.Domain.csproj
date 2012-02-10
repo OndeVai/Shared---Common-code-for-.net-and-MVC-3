@@ -62,9 +62,9 @@
     <Compile Include="Repository.Legacy\BaseObjectContextRepository.cs" />
     <Compile Include="Repository.Legacy\IContextLifetimeManager.cs" />
     <Compile Include="Repository.Legacy\ObjectContextExtensions.cs" />
-    <Compile Include="Repository\Impl\DbContextGenericRepository.cs" />
+    <Compile Include="Repository\Impl\DbContextRepository.cs" />
     <Compile Include="Repository\IGenericRepository.cs" />
-    <Compile Include="Repository\Impl\EntityDBContextGenericRepository.cs" />
+    <Compile Include="Repository\Impl\EntityDBContextRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Shared\Shared.csproj">
@@ -75,6 +75,7 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

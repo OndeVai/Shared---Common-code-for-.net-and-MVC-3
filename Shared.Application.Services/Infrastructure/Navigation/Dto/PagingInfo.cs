@@ -1,4 +1,4 @@
-﻿namespace Shared.Application.Services.Dto
+﻿namespace Shared.Application.Infrastructure.Navigation.Dto
 {
     public class PagingInfo
     {
