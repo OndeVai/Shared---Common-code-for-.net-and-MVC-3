@@ -14,9 +14,10 @@ namespace Shared.Application.Infrastructure.Querying
         public abstract IQueryable<TModel> SortQueryFor(IQueryable<TModel> baseQuery, TSortBy sortBy, bool orderByDescending);
 
 
-        protected IOrderedQueryable<TModel> OrderBy<TValue>(IQueryable<TModel> baseQuery, Expression<Func<TModel,TValue>> predicate, bool orderByDescending)
+        protected IOrderedQueryable<TModel> OrderBy<TValue>(IQueryable<TModel> baseQuery, Expression<Func<TModel,TValue>> predicate, 
+                                                            bool orderByDescending)
         {
-            return (IOrderedQueryable<TModel>) (orderByDescending ? baseQuery.OrderByDescending(predicate) : baseQuery.OrderBy(predicate));
+            return orderByDescending ? baseQuery.OrderByDescending(predicate) : baseQuery.OrderBy(predicate);
         }
     }
 }
