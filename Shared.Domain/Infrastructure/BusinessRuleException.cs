@@ -8,8 +8,10 @@ using System.Text;
 
 namespace Shared.Domain.Infrastructure
 {
-    public class BusinessRuleException : Exception
+    public class BusinessRuleException : ApplicationException
     {
+        private readonly StringBuilder _brokenRulesText;
+
         public BusinessRuleException(string rule)
             : this("", new[] { new BusinessRule(rule) })
         {
@@ -20,8 +22,13 @@ namespace Shared.Domain.Infrastructure
             var brokenRules = new StringBuilder(modelErrorMessage);
             foreach (var businessRule in businessRules)
             {
-                brokenRules.AppendLine(businessRule.Rule);
+                _brokenRulesText = brokenRules.AppendLine(businessRule.Rule);
             }
+        }
+
+        public override string Message
+        {
+            get { return _brokenRulesText.ToString(); }
         }
     }
 }
