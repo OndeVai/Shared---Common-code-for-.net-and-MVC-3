@@ -1,0 +1,12 @@
+C:\_custom\shared\shared_4.0\Shared.Infrastructure\bin\Debug\Shared.Infrastructure.dll
+C:\_custom\shared\shared_4.0\Shared.Infrastructure\bin\Debug\Shared.Infrastructure.pdb
+C:\_custom\shared\shared_4.0\Shared.Infrastructure\bin\Debug\Shared.Caching.dll
+C:\_custom\shared\shared_4.0\Shared.Infrastructure\bin\Debug\Shared.dll
+C:\_custom\shared\shared_4.0\Shared.Infrastructure\bin\Debug\NLog.dll
+C:\_custom\shared\shared_4.0\Shared.Infrastructure\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\_custom\shared\shared_4.0\Shared.Infrastructure\bin\Debug\Shared.Caching.pdb
+C:\_custom\shared\shared_4.0\Shared.Infrastructure\bin\Debug\Shared.pdb
+C:\_custom\shared\shared_4.0\Shared.Infrastructure\bin\Debug\NLog.xml
+C:\_custom\shared\shared_4.0\Shared.Infrastructure\obj\Debug\ResolveAssemblyReference.cache
+C:\_custom\shared\shared_4.0\Shared.Infrastructure\obj\Debug\Shared.Infrastructure.dll
+C:\_custom\shared\shared_4.0\Shared.Infrastructure\obj\Debug\Shared.Infrastructure.pdb
