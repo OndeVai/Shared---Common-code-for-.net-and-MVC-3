@@ -8,7 +8,6 @@ C:\_custom\projects\xylem\freshexpress-gain\development\Shared.Domain\bin\Debug\
 C:\_custom\shared\shared_4.0\Shared.Domain\bin\Debug\Shared.Domain.dll
 C:\_custom\shared\shared_4.0\Shared.Domain\bin\Debug\Shared.Domain.pdb
 C:\_custom\shared\shared_4.0\Shared.Domain\bin\Debug\Shared.dll
-C:\_custom\shared\shared_4.0\Shared.Domain\bin\Debug\System.Linq.Dynamic.dll
 C:\_custom\shared\shared_4.0\Shared.Domain\bin\Debug\NLog.dll
 C:\_custom\shared\shared_4.0\Shared.Domain\bin\Debug\ICSharpCode.SharpZipLib.dll
 C:\_custom\shared\shared_4.0\Shared.Domain\bin\Debug\Shared.pdb

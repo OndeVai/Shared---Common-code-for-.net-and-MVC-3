@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Linq.Expressions;
-using Shared.Domain.Infrastructure;
+using Shared.Domain.Logic;
 
 namespace Shared.Domain.Repository {
 

@@ -12,6 +12,7 @@ namespace Shared.Web.Mvc.Infrastructure.Ioc
 {
     public class NinjectDependencyResolver : IDependencyResolver
     {
+
         private readonly IKernel _kernel;
 
         public NinjectDependencyResolver(IKernel kernel)

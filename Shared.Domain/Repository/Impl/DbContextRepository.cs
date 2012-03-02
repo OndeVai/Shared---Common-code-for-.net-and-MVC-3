@@ -5,7 +5,7 @@ using System.Data;
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
-using Shared.Domain.Infrastructure;
+using Shared.Domain.Logic;
 using Shared.Linq;
 using System.Linq.Dynamic;
 

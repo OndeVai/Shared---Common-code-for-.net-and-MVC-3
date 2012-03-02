@@ -49,15 +49,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Infrastructure\BusinessRule.cs" />
-    <Compile Include="Infrastructure\BusinessRuleException.cs" />
-    <Compile Include="Infrastructure\ComponentModelEntityBase.cs" />
-    <Compile Include="Infrastructure\EntityBase.cs" />
-    <Compile Include="Infrastructure\IAggregateRoot.cs" />
-    <Compile Include="Infrastructure\IEntityValidator.cs" />
-    <Compile Include="Infrastructure\IUnitOfWork.cs" />
-    <Compile Include="Infrastructure\ValueObjectBase.cs" />
-    <Compile Include="Infrastructure\ValueObjectIsInvalidException.cs" />
+    <Compile Include="Logic\BusinessRule.cs" />
+    <Compile Include="Logic\BusinessRuleException.cs" />
+    <Compile Include="Logic\ComponentModelEntityBase.cs" />
+    <Compile Include="Logic\EntityBase.cs" />
+    <Compile Include="Logic\IAggregateRoot.cs" />
+    <Compile Include="Logic\IEntityValidator.cs" />
+    <Compile Include="Logic\IUnitOfWork.cs" />
+    <Compile Include="Logic\ValueObjectBase.cs" />
+    <Compile Include="Logic\ValueObjectIsInvalidException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository.Legacy\BaseObjectContextRepository.cs" />
     <Compile Include="Repository.Legacy\IContextLifetimeManager.cs" />

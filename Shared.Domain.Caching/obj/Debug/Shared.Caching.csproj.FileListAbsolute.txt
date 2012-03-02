@@ -1,5 +1,0 @@
-C:\_custom\shared\shared_4.0\Shared.Domain.Caching\bin\Debug\Shared.Caching.dll
-C:\_custom\shared\shared_4.0\Shared.Domain.Caching\bin\Debug\Shared.Caching.pdb
-C:\_custom\shared\shared_4.0\Shared.Domain.Caching\obj\Debug\ResolveAssemblyReference.cache
-C:\_custom\shared\shared_4.0\Shared.Domain.Caching\obj\Debug\Shared.Caching.dll
-C:\_custom\shared\shared_4.0\Shared.Domain.Caching\obj\Debug\Shared.Caching.pdb

@@ -1,5 +1,0 @@
-C:\_custom\shared\shared_4.0\Shared.Domain.Messaging\Shared.Domain.Messaging\bin\Debug\Shared.Infrastructure.Messaging.dll
-C:\_custom\shared\shared_4.0\Shared.Domain.Messaging\Shared.Domain.Messaging\bin\Debug\Shared.Infrastructure.Messaging.pdb
-C:\_custom\shared\shared_4.0\Shared.Domain.Messaging\Shared.Domain.Messaging\obj\Debug\ResolveAssemblyReference.cache
-C:\_custom\shared\shared_4.0\Shared.Domain.Messaging\Shared.Domain.Messaging\obj\Debug\Shared.Infrastructure.Messaging.dll
-C:\_custom\shared\shared_4.0\Shared.Domain.Messaging\Shared.Domain.Messaging\obj\Debug\Shared.Infrastructure.Messaging.pdb

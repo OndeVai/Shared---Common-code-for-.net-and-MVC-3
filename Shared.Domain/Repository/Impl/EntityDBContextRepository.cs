@@ -1,6 +1,6 @@
 using System.Data.Entity;
 using System.Linq;
-using Shared.Domain.Infrastructure;
+using Shared.Domain.Logic;
 
 namespace Shared.Domain.Repository.Impl
 {
