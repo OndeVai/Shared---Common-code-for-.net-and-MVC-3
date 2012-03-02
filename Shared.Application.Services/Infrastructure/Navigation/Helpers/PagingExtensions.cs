@@ -19,7 +19,10 @@ namespace Shared.Application.Infrastructure.Navigation.Helpers
             var totalPageCount = (int)Math.Ceiling((double)totalListCount / pageSize);
             if (currentPage > totalPageCount) currentPage = totalPageCount;
 
-            pagingInfo = new PagingInfo { CurrentPage = currentPage, ItemsPerPage = pageSize, TotalItems = totalListCount, TotalPages = totalPageCount };
+            pagingInfo.CurrentPage = currentPage;
+            pagingInfo.ItemsPerPage = pageSize;
+            pagingInfo.TotalItems = totalListCount;
+            pagingInfo.TotalPages = totalPageCount;
         }
     }
 }

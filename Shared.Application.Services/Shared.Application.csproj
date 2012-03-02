@@ -56,6 +56,7 @@
     <Compile Include="Infrastructure\Querying\IPagedQueryGenerator.cs" />
     <Compile Include="Infrastructure\Querying\IQuerySortFactory.cs" />
     <Compile Include="Infrastructure\Querying\PagedQueryGenerator.cs" />
+    <Compile Include="Infrastructure\Querying\QuerySortFactory.cs" />
     <Compile Include="Infrastructure\Transaction\SaveRequest.cs" />
     <Compile Include="Infrastructure\Transaction\SaveResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

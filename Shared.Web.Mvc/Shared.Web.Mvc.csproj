@@ -52,6 +52,8 @@
     <Compile Include="HtmlHelperExtensions.cs" />
     <Compile Include="HttpContextBaseExtensions.cs" />
     <Compile Include="Infrastructure\Ioc\NinjectDependencyResolver.cs" />
+    <Compile Include="Infrastructure\Validation\CustomDataTypeAttributeAdapter.cs" />
+    <Compile Include="Infrastructure\Validation\ModelClientValidationDataTypeRule.cs" />
     <Compile Include="Navigation\Controllers\ControllerExtensions.cs" />
     <Compile Include="Navigation\Model\ActionNavLink.cs" />
     <Compile Include="Navigation\Model\BaseNavLink.cs" />
