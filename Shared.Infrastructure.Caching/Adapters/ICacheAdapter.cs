@@ -4,7 +4,7 @@ using System;
 
 #endregion
 
-namespace Shared.Caching.Adapters
+namespace Shared.Infrastructure.Caching.Adapters
 {
     public interface ICacheAdapter
     {

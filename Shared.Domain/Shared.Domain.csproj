@@ -62,9 +62,12 @@
     <Compile Include="Repository.Legacy\BaseObjectContextRepository.cs" />
     <Compile Include="Repository.Legacy\IContextLifetimeManager.cs" />
     <Compile Include="Repository.Legacy\ObjectContextExtensions.cs" />
+    <Compile Include="Repository\IEntityRepository.cs" />
     <Compile Include="Repository\Impl\DbContextRepository.cs" />
     <Compile Include="Repository\IGenericRepository.cs" />
     <Compile Include="Repository\Impl\EntityDBContextRepository.cs" />
+    <Compile Include="Service\BaseService.cs" />
+    <Compile Include="Service\IDomainService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Shared\Shared.csproj">

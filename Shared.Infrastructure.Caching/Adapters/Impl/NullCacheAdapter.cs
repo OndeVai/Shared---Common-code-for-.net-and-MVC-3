@@ -4,7 +4,7 @@ using System;
 
 #endregion
 
-namespace Shared.Caching.Adapters.Impl
+namespace Shared.Infrastructure.Caching.Adapters.Impl
 {
     public class NullCacheAdapter : ICacheAdapter
     {

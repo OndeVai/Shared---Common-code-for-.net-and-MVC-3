@@ -2,7 +2,7 @@ using System;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace Shared.Infrastructure.Querying
+namespace Shared.Infrastructure.Service.Impl
 {
     public abstract class QuerySortFactory<TModel, TSortBy> : IQuerySortFactory<TModel, TSortBy>
     {

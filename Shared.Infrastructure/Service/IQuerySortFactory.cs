@@ -1,6 +1,6 @@
 using System.Linq;
 
-namespace Shared.Infrastructure.Querying
+namespace Shared.Infrastructure.Service
 {
     public interface IQuerySortFactory<TModel, in TSortBy>
     {

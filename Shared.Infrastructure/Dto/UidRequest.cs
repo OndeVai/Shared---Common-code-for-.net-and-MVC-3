@@ -1,4 +1,4 @@
-﻿namespace Shared.Infrastructure.Querying.Dto
+﻿namespace Shared.Infrastructure.Dto
 {
     public class UidRequest
     {

@@ -8,8 +8,8 @@
     <ProjectGuid>{AD8FA08F-70DC-43B7-9CC2-67CB885A4989}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Shared.Caching</RootNamespace>
-    <AssemblyName>Shared.Caching</AssemblyName>
+    <RootNamespace>Shared.Infrastructure.Caching</RootNamespace>
+    <AssemblyName>Shared.Infrastructure.Caching</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

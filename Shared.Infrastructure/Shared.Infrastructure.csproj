@@ -48,15 +48,18 @@
     <Compile Include="Location\Service\Impl\USXmlStateProvinceService.cs" />
     <Compile Include="Navigation\Dto\PagingInfo.cs" />
     <Compile Include="Navigation\Helpers\PagingExtensions.cs" />
-    <Compile Include="Querying\Dto\BasePagingListDto.cs" />
-    <Compile Include="Querying\Dto\IPagingListRequest.cs" />
-    <Compile Include="Querying\Dto\PagingListRequest.cs" />
-    <Compile Include="Querying\Dto\PagingListResponse.cs" />
-    <Compile Include="Querying\Dto\UidRequest.cs" />
-    <Compile Include="Querying\IPagedQueryGenerator.cs" />
-    <Compile Include="Querying\IQuerySortFactory.cs" />
-    <Compile Include="Querying\PagedQueryGenerator.cs" />
-    <Compile Include="Querying\QuerySortFactory.cs" />
+    <Compile Include="Dto\BasePagingListDto.cs" />
+    <Compile Include="Dto\IPagingListRequest.cs" />
+    <Compile Include="Dto\PagingListRequest.cs" />
+    <Compile Include="Dto\PagingListResponse.cs" />
+    <Compile Include="Dto\UidRequest.cs" />
+    <Compile Include="Service\IPagedQueryGenerator.cs" />
+    <Compile Include="Service\IQuerySortFactory.cs" />
+    <Compile Include="Service\Impl\PagedQueryGenerator.cs" />
+    <Compile Include="Service\Impl\QuerySortFactory.cs" />
+    <Compile Include="Service\IApplicationQueryService.cs" />
+    <Compile Include="Service\IApplicationTransactionService.cs" />
+    <Compile Include="Service\Impl\QueryService.cs" />
     <Compile Include="Transaction\SaveRequest.cs" />
     <Compile Include="Transaction\SaveResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -66,6 +69,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <ProjectReference Include="..\Shared.Domain\Shared.Domain.csproj">
+      <Project>{A04CE503-1339-4C5A-8363-C6B8A28D9448}</Project>
+      <Name>Shared.Domain</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Shared.Infrastructure.Caching\Shared.Infrastructure.Caching.csproj">
       <Project>{AD8FA08F-70DC-43B7-9CC2-67CB885A4989}</Project>
       <Name>Shared.Infrastructure.Caching</Name>

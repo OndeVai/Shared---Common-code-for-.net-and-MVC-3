@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using Shared.Infrastructure.Navigation.Dto;
 
-namespace Shared.Infrastructure.Querying.Dto
+namespace Shared.Infrastructure.Dto
 {
     public class PagingListResponse<TSummary> : BasePagingListDto
     {

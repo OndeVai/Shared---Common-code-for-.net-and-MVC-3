@@ -1,6 +1,5 @@
 C:\_custom\shared\shared_4.0\Shared\bin\Debug\Shared.dll
 C:\_custom\shared\shared_4.0\Shared\bin\Debug\Shared.pdb
-C:\_custom\shared\shared_4.0\Shared\bin\Debug\NLog.xml
 C:\_custom\shared\shared_4.0\Shared\obj\Debug\ResolveAssemblyReference.cache
 C:\_custom\shared\shared_4.0\Shared\obj\Debug\Shared.dll
 C:\_custom\shared\shared_4.0\Shared\obj\Debug\Shared.pdb

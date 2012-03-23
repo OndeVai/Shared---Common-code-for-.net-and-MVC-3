@@ -15,6 +15,6 @@ namespace Shared.Domain.Repository {
         void Delete(TModel entity);
         void Edit(TModel entity);
         IQueryable<TModel> GetAll<TValue>(Expression<Func<TModel, TValue>> orderBy, int pageNumber, int pageSize);
-        void MarkForSave(TModel model);
+        void Save(TModel model);
     }
 }

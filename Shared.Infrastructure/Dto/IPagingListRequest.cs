@@ -1,6 +1,6 @@
 using Shared.Infrastructure.Navigation.Dto;
 
-namespace Shared.Infrastructure.Querying.Dto
+namespace Shared.Infrastructure.Dto
 {
     public interface IPagingListRequest<out TSortBy>
     {

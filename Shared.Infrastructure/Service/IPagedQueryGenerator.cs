@@ -1,7 +1,7 @@
 using System.Linq;
-using Shared.Infrastructure.Querying.Dto;
+using Shared.Infrastructure.Dto;
 
-namespace Shared.Infrastructure.Querying
+namespace Shared.Infrastructure.Service
 {
     public interface IPagedQueryGenerator<TModel, in TSortBy>
     {

@@ -93,6 +93,6 @@ namespace Shared.Domain.Repository.Impl
             _disposed = true;
         }
 
-        public abstract void MarkForSave(TModel model);
+        public abstract void Save(TModel model);
     }
 }

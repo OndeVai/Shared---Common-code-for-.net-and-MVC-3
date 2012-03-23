@@ -1,13 +1,13 @@
 #region
 
 using System.Linq;
+using Shared.Infrastructure.Dto;
 using Shared.Infrastructure.Navigation.Helpers;
-using Shared.Infrastructure.Querying.Dto;
 using Shared.Linq;
 
 #endregion
 
-namespace Shared.Infrastructure.Querying
+namespace Shared.Infrastructure.Service.Impl
 {
     public class FactoryPagedQueryGenerator<TModel, TSortBy> : IPagedQueryGenerator<TModel, TSortBy>
     {

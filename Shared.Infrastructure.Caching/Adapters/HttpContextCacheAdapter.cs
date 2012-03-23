@@ -6,7 +6,7 @@ using System.Web.Caching;
 
 #endregion
 
-namespace Shared.Caching.Adapters
+namespace Shared.Infrastructure.Caching.Adapters
 {
     public class HttpContextCacheAdapter : ICacheAdapter
     {
