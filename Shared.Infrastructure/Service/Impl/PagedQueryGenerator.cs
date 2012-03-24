@@ -9,16 +9,16 @@ using Shared.Linq;
 
 namespace Shared.Infrastructure.Service.Impl
 {
-    public class FactoryPagedQueryGenerator<TModel, TSortBy> : IPagedQueryGenerator<TModel, TSortBy>
+    public class SortedPagedQueryGenerator<TModel, TSortBy> : IPagedQueryGenerator<TModel, TSortBy>
     {
         private readonly IQuerySortFactory<TModel, TSortBy> _querySortFactory;
 
-        public FactoryPagedQueryGenerator(IQuerySortFactory<TModel, TSortBy> querySortFactory)
+        public SortedPagedQueryGenerator(IQuerySortFactory<TModel, TSortBy> querySortFactory)
         {
             _querySortFactory = querySortFactory;
         }
 
-        public IQueryable<TModel> CreateQueryFor(IQueryable<TModel> baseQuery, IPagingListRequest<TSortBy> pagingListRequest)
+        public virtual IQueryable<TModel> CreateQueryFor(IQueryable<TModel> baseQuery, IPagingListRequest<TSortBy> pagingListRequest)
         {
             var queryCount = baseQuery.Count();
             var adjustedPaging = pagingListRequest.Paging;

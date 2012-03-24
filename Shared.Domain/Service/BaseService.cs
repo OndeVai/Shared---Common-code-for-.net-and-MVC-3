@@ -31,9 +31,4 @@ namespace Shared.Domain.Service
 
         
     }
-
-    public interface IEntityMutator<in T> where T : IAggregateRoot
-    {
-        void Mutate(T entity);
-    }
 }

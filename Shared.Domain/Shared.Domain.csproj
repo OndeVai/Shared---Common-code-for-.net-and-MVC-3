@@ -56,6 +56,7 @@
     <Compile Include="Logic\IAggregateRoot.cs" />
     <Compile Include="Logic\IEntityValidator.cs" />
     <Compile Include="Logic\IUnitOfWork.cs" />
+    <Compile Include="Logic\NullEntityMutator.cs" />
     <Compile Include="Logic\ValueObjectBase.cs" />
     <Compile Include="Logic\ValueObjectIsInvalidException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -68,6 +69,7 @@
     <Compile Include="Repository\Impl\EntityDBContextRepository.cs" />
     <Compile Include="Service\BaseService.cs" />
     <Compile Include="Service\IDomainService.cs" />
+    <Compile Include="Logic\IEntityMutator.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Shared\Shared.csproj">

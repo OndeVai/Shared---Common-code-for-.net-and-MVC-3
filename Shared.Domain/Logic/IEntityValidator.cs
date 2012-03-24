@@ -21,7 +21,7 @@ namespace Shared.Domain.Logic
             {
                 throw new BusinessRuleException("", entity.GetBrokenRules());
             }
-            return false;
+            return true;
         }
 
         #endregion
