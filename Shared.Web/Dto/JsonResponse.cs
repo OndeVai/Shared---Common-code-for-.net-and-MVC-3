@@ -4,7 +4,7 @@
     {
         // ReSharper disable UnusedAutoPropertyAccessor.Local
         public bool Success { get; set; }
-        public string ErrorUrl { get; set; }
+        public string FatalErrorUrl { get; set; }
         // ReSharper restore UnusedAutoPropertyAccessor.Local
     }
 }

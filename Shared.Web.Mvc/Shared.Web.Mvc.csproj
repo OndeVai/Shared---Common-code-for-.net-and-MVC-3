@@ -49,17 +49,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller.cs" />
     <Compile Include="HtmlHelperExtensions.cs" />
     <Compile Include="HttpContextBaseExtensions.cs" />
     <Compile Include="Infrastructure\Ioc\NinjectDependencyResolver.cs" />
     <Compile Include="Infrastructure\Validation\CustomDataTypeAttributeAdapter.cs" />
     <Compile Include="Infrastructure\Validation\ModelClientValidationDataTypeRule.cs" />
-    <Compile Include="Navigation\Controllers\ControllerExtensions.cs" />
     <Compile Include="Navigation\Model\ActionNavLink.cs" />
     <Compile Include="Navigation\Model\BaseNavLink.cs" />
     <Compile Include="Navigation\Model\NavLink.cs" />
     <Compile Include="Navigation\Model\SeoNavLink.cs" />
-    <Compile Include="Navigation\Controllers\SEOControllerExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Infrastructure\Validation\Constants.cs" />
     <Compile Include="Infrastructure\Validation\ValidatePasswordLengthAttribute.cs" />

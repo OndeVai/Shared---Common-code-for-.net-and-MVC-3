@@ -11,6 +11,5 @@ namespace Shared.Infrastructure.Service
     {
        
         SaveResponse<TDetail> Save(SaveRequest<TEdit> saveRequest);
-        void Delete(UidRequest deleteRequest);
     }
 }

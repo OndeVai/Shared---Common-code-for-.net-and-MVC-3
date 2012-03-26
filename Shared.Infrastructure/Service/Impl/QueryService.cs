@@ -7,19 +7,20 @@ using Shared.Infrastructure.Dto;
 
 namespace Shared.Infrastructure.Service.Impl
 {
-    public class QueryService<TDtoSummary, TDtoDetail, TDomain, TSortBy>
+    public class QueryService<TDtoSummary, TDtoDetail, TDomain, TSortBy, TRepository>
         where TDomain : class
         where TDtoDetail : class
+        where TRepository : IEntityRepository<TDomain>
     {
         private readonly IPagedQueryGenerator<TDomain, TSortBy> _pagedQueryGenerator;
 
-        public QueryService(IEntityRepository<TDomain> repository, IPagedQueryGenerator<TDomain, TSortBy> pagedQueryGenerator)
+        public QueryService(TRepository repository, IPagedQueryGenerator<TDomain, TSortBy> pagedQueryGenerator)
         {
             Repository = repository;
             _pagedQueryGenerator = pagedQueryGenerator;
         }
 
-        protected IEntityRepository<TDomain> Repository { get; private set; }
+        protected TRepository Repository { get; private set; }
 
         #region IQueryService<TDto,TSortBy> Members
 
