@@ -4,10 +4,12 @@
     {
         public PagingInfo()
         {
-            
+            TotalItems = 0;
+            TotalPages = 0;
         }
 
         public PagingInfo(int currentPage, int itemsPerPage)
+            : this()
         {
             CurrentPage = currentPage;
             ItemsPerPage = itemsPerPage;

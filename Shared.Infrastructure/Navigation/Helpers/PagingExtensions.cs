@@ -16,7 +16,8 @@ namespace Shared.Infrastructure.Navigation.Helpers
             if (currentPage < 1) currentPage = 1;
             if (pageSize < 1) pageSize = 100;
             if (pageSize > totalListCount) pageSize = totalListCount;
-            var totalPageCount = (int)Math.Ceiling((double)totalListCount / pageSize);
+            var totalPageCount = totalListCount <= 0 ? 0 : (int)Math.Ceiling((double)totalListCount / pageSize);
+
             if (currentPage > totalPageCount) currentPage = totalPageCount;
 
             pagingInfo.CurrentPage = currentPage;

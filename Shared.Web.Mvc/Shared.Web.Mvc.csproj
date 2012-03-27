@@ -52,6 +52,8 @@
     <Compile Include="Controller.cs" />
     <Compile Include="HtmlHelperExtensions.cs" />
     <Compile Include="HttpContextBaseExtensions.cs" />
+    <Compile Include="Infrastructure\ActionFilters\BusinessRuleExceptionAttribute.cs" />
+    <Compile Include="Infrastructure\ActionResults\CustomJsonResult.cs" />
     <Compile Include="Infrastructure\Ioc\NinjectDependencyResolver.cs" />
     <Compile Include="Infrastructure\Validation\CustomDataTypeAttributeAdapter.cs" />
     <Compile Include="Infrastructure\Validation\ModelClientValidationDataTypeRule.cs" />
@@ -64,6 +66,14 @@
     <Compile Include="Infrastructure\Validation\ValidatePasswordLengthAttribute.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Shared.Domain\Shared.Domain.csproj">
+      <Project>{A04CE503-1339-4C5A-8363-C6B8A28D9448}</Project>
+      <Name>Shared.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Shared.Web\Shared.Web.csproj">
+      <Project>{1A952C24-F108-405A-887B-EE0EFC605051}</Project>
+      <Name>Shared.Web</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Shared\Shared.csproj">
       <Project>{A39B2E8C-B736-4EC2-90F8-0D006EE9F27F}</Project>
       <Name>Shared</Name>
