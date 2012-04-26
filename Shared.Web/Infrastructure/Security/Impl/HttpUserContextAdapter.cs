@@ -5,7 +5,7 @@ using Shared.Security;
 
 #endregion
 
-namespace Shared.Web.Security.Impl
+namespace Shared.Web.Infrastructure.Security.Impl
 {
     public abstract class HttpUserContextAdapter : IUserContextAdapter
     {

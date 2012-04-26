@@ -5,7 +5,7 @@ using System.Web.Security;
 
 #endregion
 
-namespace Shared.Web.Security.Services.Impl
+namespace Shared.Web.Infrastructure.Security.Services.Impl
 {
     public class AspNetFormsAuthenticationService : IFormsAuthenticationService
     {

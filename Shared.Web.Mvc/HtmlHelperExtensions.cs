@@ -36,33 +36,7 @@ namespace Shared.Web.Mvc
                    currentActionName.Equals(actionName, StringComparison.CurrentCultureIgnoreCase);
         }
 
-        public static MvcHtmlString TextBoxDateTime<TModel, TValue>(this HtmlHelper<TModel> helper,
-                                                                    Expression<Func<TModel, TValue>> expression,
-                                                                    int tabIndex = 1, string cssClass = "",
-                                                                    bool readOnly = false)
-        {
-            var meta = ModelMetadata.FromLambdaExpression(expression, helper.ViewData);
-            var propertyName = ExpressionHelper.GetExpressionText(expression);
-            var shortDate = CoerceDate(meta.Model);
-            var shortDateText = IsBindingNullDate(shortDate) ? "" : shortDate.ToShortDateString();
-
-            var input = new TagBuilder("input");
-            input.MergeAttribute("id",
-                                 helper.AttributeEncode(GetFieldHtmlID(expression, helper)));
-            input.MergeAttribute("name",
-                                 helper.AttributeEncode(
-                                     helper.ViewData.TemplateInfo.GetFullHtmlFieldName(propertyName)));
-            input.MergeAttribute("value", shortDateText);
-            input.MergeAttribute("type", "text");
-            input.MergeAttribute("class", cssClass);
-            input.MergeAttribute("tabindex", tabIndex.ToString());
-            input.MergeAttributes(
-                helper.GetUnobtrusiveValidationAttributes(ExpressionHelper.GetExpressionText(expression), meta));
-            if (readOnly) input.MergeAttribute("readonly", "readonly");
-
-            return MvcHtmlString.Create(input.ToString());
-        }
-
+        
         public static MvcHtmlString TextBoxForEnhanced<T, TValue>(this HtmlHelper<T> htmlHelper,
                                                                   Expression<Func<T, TValue>> expression,
                                                                   IDictionary<string, object> htmlAttributes,

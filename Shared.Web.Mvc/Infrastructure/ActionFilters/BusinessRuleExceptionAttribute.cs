@@ -12,19 +12,26 @@ namespace Shared.Web.Mvc.Infrastructure.ActionFilters
     {
         #region IExceptionFilter Members
 
-        public void OnException(ExceptionContext filterContext)
+        public virtual void OnException(ExceptionContext filterContext)
         {
-            if (!filterContext.ExceptionHandled) //&& filterContext.HttpContext.Request.IsJsonRequest()) --add back when doing ajax
+            var busRuleException = filterContext.Exception as BusinessRuleException;
+            if (busRuleException != null)
             {
-                var busRuleException = filterContext.Exception as BusinessRuleException;
-                if (busRuleException != null)
-                {
-                    filterContext.Result = new CustomJsonResult(busRuleException.Message);
-                    filterContext.ExceptionHandled = true;
-                }
+                SendJsonException(filterContext, busRuleException.Message);
             }
         }
 
         #endregion
+
+        protected void SendJsonException(ExceptionContext filterContext, string message, string errorUrl = null)
+        {
+            if (!filterContext.ExceptionHandled && filterContext.HttpContext.Request.IsJsonRequest())
+            {
+
+                filterContext.Result = new CustomJsonResult(message, errorUrl);
+                filterContext.ExceptionHandled = true;
+
+            }
+        }
     }
 }

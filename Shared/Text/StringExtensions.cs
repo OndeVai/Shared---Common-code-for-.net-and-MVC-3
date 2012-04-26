@@ -18,7 +18,7 @@ namespace Shared.Text
             return TextUtility.StripWhitespaceAndSpecialChars(ToLowerTrim(s), replaceWhitespace);
         }
 
-        public static string ToAbbreviated(this string thisString, int len, string append)
+        public static string ToAbbreviated(this string thisString, int len, string append = "...")
         {
             return TextUtility.GetAbbreviated(thisString, len, append);
         }

@@ -36,7 +36,7 @@ namespace Shared.IO
         {
             var fi = new FileInfo(filename);
 
-            var entryName = filename; // Makes the name in zip based on the folder
+            var entryName = Path.GetFileName(filename); // Makes the name in zip based on the folder
             entryName = ZipEntry.CleanName(entryName); // Removes drive from name and fixes slash direction
             var newEntry = new ZipEntry(entryName);
             newEntry.DateTime = fi.LastWriteTime; // Note the zip format stores 2 second granularity

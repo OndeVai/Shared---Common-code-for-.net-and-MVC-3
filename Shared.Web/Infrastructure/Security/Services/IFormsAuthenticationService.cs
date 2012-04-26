@@ -1,4 +1,4 @@
-﻿namespace Shared.Web.Security.Services
+﻿namespace Shared.Web.Infrastructure.Security.Services
 {
     public interface IFormsAuthenticationService
     {

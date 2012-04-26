@@ -31,8 +31,9 @@ namespace Shared.Text
             var r = new Regex(regexStr, RegexOptions.IgnoreCase | RegexOptions.CultureInvariant | RegexOptions.Compiled);
             return r.Replace(input, string.Empty).Replace(@" ", replaceWhitespace);
         }
+       
 
-        public static string GetAbbreviated(string thisString, int len, string append)
+        public static string GetAbbreviatedWithFragment(string thisString, int len, string append)
         {
             if (string.IsNullOrWhiteSpace(thisString)) return string.Empty;
 
@@ -47,6 +48,16 @@ namespace Shared.Text
                 return sb.ToString();
             }
             return thisString;
+        }
+
+        public static string GetAbbreviated(string thisString, int len, string append)
+        {
+            if (string.IsNullOrWhiteSpace(thisString)) return string.Empty;
+            if (append == null) append = string.Empty;
+            len = len - append.Length;
+
+
+            return thisString.Length > len ? thisString.Substring(0, len) + append : thisString;
         }
 
         public static string ToUppercaseFirst(string s)

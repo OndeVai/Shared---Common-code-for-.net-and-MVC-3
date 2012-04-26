@@ -19,6 +19,16 @@ namespace Shared
         }
 
         /// <summary>
+        ///   First tick of the day.
+        /// </summary>
+        /// <param name = "date">The date.</param>
+        /// <returns></returns>
+        public static DateTime DateOnly(this DateTime date)
+        {
+            return new DateTime(date.Year, date.Month, date.Day);
+        }
+
+        /// <summary>
         ///   Last tick of the day.
         /// </summary>
         /// <param name = "date">The date.</param>

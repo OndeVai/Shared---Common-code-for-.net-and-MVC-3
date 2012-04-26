@@ -45,12 +45,14 @@ namespace Shared.Web.Mvc
         }
 
 
-        public static SelectListItem CreateSelectListItem(string text, int value)
+       
+
+        public static SelectListItem CreateSelectListItem<TValue>(string text, TValue value)
         {
             return new SelectListItem
             {
                 Text = text,
-                Value = value.ToString(CultureInfo.InvariantCulture)
+                Value = value.ToString()
             };
         }
     }
