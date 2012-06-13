@@ -5,6 +5,7 @@
         public BusinessRule(string rule)
         {
             Rule = rule;
+            //test
         }
 
         public string Rule { get; set; }
