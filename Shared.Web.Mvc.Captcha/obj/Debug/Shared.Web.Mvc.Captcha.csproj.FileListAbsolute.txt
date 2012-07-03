@@ -2,8 +2,8 @@ C:\_custom\shared\shared_4.0\Shared.Web.Mvc.Captcha\bin\Debug\Shared.Web.Mvc.Cap
 C:\_custom\shared\shared_4.0\Shared.Web.Mvc.Captcha\bin\Debug\Shared.Web.Mvc.Captcha.pdb
 C:\_custom\shared\shared_4.0\Shared.Web.Mvc.Captcha\bin\Debug\Recaptcha.dll
 C:\_custom\shared\shared_4.0\Shared.Web.Mvc.Captcha\bin\Debug\Shared.dll
-C:\_custom\shared\shared_4.0\Shared.Web.Mvc.Captcha\bin\Debug\NLog.dll
 C:\_custom\shared\shared_4.0\Shared.Web.Mvc.Captcha\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\_custom\shared\shared_4.0\Shared.Web.Mvc.Captcha\bin\Debug\NLog.dll
 C:\_custom\shared\shared_4.0\Shared.Web.Mvc.Captcha\bin\Debug\Shared.pdb
 C:\_custom\shared\shared_4.0\Shared.Web.Mvc.Captcha\bin\Debug\Recaptcha.pdb
 C:\_custom\shared\shared_4.0\Shared.Web.Mvc.Captcha\obj\Debug\ResolveAssemblyReference.cache
