@@ -1,11 +1,12 @@
 #region
 
-using Shared.Infrastructure.Dto;
-using Shared.Infrastructure.Transaction;
+
 
 #endregion
 
-namespace Shared.Infrastructure.Service
+using Shared.Infrastructure.Dto;
+
+namespace Shared.Infrastructure.Transaction
 {
     public interface IApplicationTransactionService<TDetail, TEdit>
     {

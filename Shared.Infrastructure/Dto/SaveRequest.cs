@@ -1,4 +1,4 @@
-namespace Shared.Infrastructure.Transaction
+namespace Shared.Infrastructure.Dto
 {
     public class SaveRequest<T>
     {

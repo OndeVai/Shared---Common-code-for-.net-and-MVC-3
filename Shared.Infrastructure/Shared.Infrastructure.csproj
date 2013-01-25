@@ -48,20 +48,18 @@
     <Compile Include="Location\Service\Impl\USXmlStateProvinceService.cs" />
     <Compile Include="Navigation\Dto\PagingInfo.cs" />
     <Compile Include="Navigation\Helpers\PagingExtensions.cs" />
-    <Compile Include="Dto\BasePagingListDto.cs" />
+    <Compile Include="Dto\BasePagingList.cs" />
     <Compile Include="Dto\IPagingListRequest.cs" />
     <Compile Include="Dto\PagingListRequest.cs" />
-    <Compile Include="Dto\PagingListResponse.cs" />
+    <Compile Include="Dto\PagedListResponse.cs" />
     <Compile Include="Dto\UidRequest.cs" />
-    <Compile Include="Service\IPagedQueryGenerator.cs" />
-    <Compile Include="Service\IQuerySortFactory.cs" />
-    <Compile Include="Service\Impl\PagedQueryGenerator.cs" />
-    <Compile Include="Service\Impl\QuerySortFactory.cs" />
-    <Compile Include="Service\IApplicationQueryService.cs" />
-    <Compile Include="Service\IApplicationTransactionService.cs" />
-    <Compile Include="Service\Impl\QueryService.cs" />
-    <Compile Include="Transaction\SaveRequest.cs" />
-    <Compile Include="Transaction\SaveResponse.cs" />
+    <Compile Include="Query\IQuery.cs" />
+    <Compile Include="Query\Impl\SortedPagedQuery.cs" />
+    <Compile Include="Query\IApplicationQueryService.cs" />
+    <Compile Include="Transaction\IApplicationTransactionService.cs" />
+    <Compile Include="Query\Impl\QueryService.cs" />
+    <Compile Include="Dto\SaveRequest.cs" />
+    <Compile Include="Dto\SaveResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

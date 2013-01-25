@@ -6,13 +6,13 @@ using Shared.Infrastructure.Navigation.Dto;
 
 namespace Shared.Infrastructure.Dto
 {
-    public abstract class BasePagingListDto
+    public abstract class BasePagingList
     {
-        protected BasePagingListDto(int currentPage, int itemsPerPage) : this(new PagingInfo(currentPage, itemsPerPage))
+        protected BasePagingList(int currentPage, int itemsPerPage) : this(new PagingInfo(currentPage, itemsPerPage))
         {
         }
 
-        protected BasePagingListDto(PagingInfo paging)
+        protected BasePagingList(PagingInfo paging)
         {
             Paging = paging;
         }

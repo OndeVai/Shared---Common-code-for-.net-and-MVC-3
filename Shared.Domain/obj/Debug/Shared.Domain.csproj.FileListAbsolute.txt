@@ -14,3 +14,12 @@ C:\_custom\shared\shared_4.0\Shared.Domain\bin\Debug\Shared.pdb
 C:\_custom\shared\shared_4.0\Shared.Domain\obj\Debug\ResolveAssemblyReference.cache
 C:\_custom\shared\shared_4.0\Shared.Domain\obj\Debug\Shared.Domain.dll
 C:\_custom\shared\shared_4.0\Shared.Domain\obj\Debug\Shared.Domain.pdb
+C:\_dev_projects\mine\shared\Shared---Common-code-for-.net-and-MVC-3\Shared.Domain\bin\Debug\Shared.Domain.dll
+C:\_dev_projects\mine\shared\Shared---Common-code-for-.net-and-MVC-3\Shared.Domain\bin\Debug\Shared.Domain.pdb
+C:\_dev_projects\mine\shared\Shared---Common-code-for-.net-and-MVC-3\Shared.Domain\bin\Debug\Shared.dll
+C:\_dev_projects\mine\shared\Shared---Common-code-for-.net-and-MVC-3\Shared.Domain\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\_dev_projects\mine\shared\Shared---Common-code-for-.net-and-MVC-3\Shared.Domain\bin\Debug\NLog.dll
+C:\_dev_projects\mine\shared\Shared---Common-code-for-.net-and-MVC-3\Shared.Domain\bin\Debug\Shared.pdb
+C:\_dev_projects\mine\shared\Shared---Common-code-for-.net-and-MVC-3\Shared.Domain\obj\Debug\Shared.Domain.dll
+C:\_dev_projects\mine\shared\Shared---Common-code-for-.net-and-MVC-3\Shared.Domain\obj\Debug\Shared.Domain.pdb
+C:\_dev_projects\mine\shared\Shared---Common-code-for-.net-and-MVC-3\Shared.Domain\obj\Debug\Shared.Domain.csprojResolveAssemblyReference.cache

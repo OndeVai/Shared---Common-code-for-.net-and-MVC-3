@@ -1,10 +1,10 @@
 using Shared.Infrastructure.Dto;
 
-namespace Shared.Infrastructure.Service
+namespace Shared.Infrastructure.Query
 {
     public interface IApplicationQueryService<TSummary, out TDetail, TSortBy>
     {
-        PagingListResponse<TSummary> List(PagingListRequest<TSortBy> listRequest);
+        PagedListResponse<TSummary> List(PagingListRequest<TSortBy> listRequest);
         TDetail Find(UidRequest promotionFindRequest);
     }
 }

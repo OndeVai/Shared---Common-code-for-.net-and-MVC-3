@@ -3,9 +3,9 @@ using Shared.Infrastructure.Navigation.Dto;
 
 namespace Shared.Infrastructure.Dto
 {
-    public class PagingListResponse<TSummary> : BasePagingListDto
+    public class PagedListResponse<TSummary> : BasePagingList
     {
-        public PagingListResponse(List<TSummary> list, PagingInfo paging)
+        public PagedListResponse(List<TSummary> list, PagingInfo paging)
             : base(paging)
         {
             List = list;

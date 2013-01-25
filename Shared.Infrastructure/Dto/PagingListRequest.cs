@@ -6,7 +6,7 @@ using Shared.Infrastructure.Navigation.Dto;
 
 namespace Shared.Infrastructure.Dto
 {
-    public class PagingListRequest<TSortBy> : BasePagingListDto, IPagingListRequest<TSortBy>
+    public class PagingListRequest<TSortBy> : BasePagingList, IPagingListRequest<TSortBy>
     {
         public PagingListRequest(TSortBy sortBy, int currentPage, int itemsPerPage)
             : this(sortBy, new PagingInfo(currentPage, itemsPerPage))
