@@ -22,7 +22,8 @@ namespace Shared.Domain.Logic
             var brokenRules = new StringBuilder(modelErrorMessage);
             foreach (var businessRule in businessRules)
             {
-                _brokenRulesText = brokenRules.AppendLine(businessRule.Rule);
+                var messageLine = string.Format("{0}{1}", businessRule.Rule, Environment.NewLine);
+                _brokenRulesText = brokenRules.AppendLine(messageLine);
             }
         }
 

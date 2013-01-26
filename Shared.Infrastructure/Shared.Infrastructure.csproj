@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\..\..\donger1\Komparator\Api\packages\AutoMapper.2.2.0\lib\net40\AutoMapper.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Linq.Dynamic">
@@ -43,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Conversion\Impl\DefaultListTypeConverter.cs" />
+    <Compile Include="Conversion\ITypeConverter.cs" />
     <Compile Include="Location\Dto\State.cs" />
     <Compile Include="Location\Service\IStateProvinceService.cs" />
     <Compile Include="Location\Service\Impl\USXmlStateProvinceService.cs" />

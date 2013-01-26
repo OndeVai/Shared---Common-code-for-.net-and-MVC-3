@@ -8,4 +8,5 @@ namespace Shared.Infrastructure.Query
 
         IEnumerable<TResult> Execute(PagingListRequest<TSortBy> listRequest);
     }
+
 }

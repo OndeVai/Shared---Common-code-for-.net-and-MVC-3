@@ -25,3 +25,5 @@ C:\_dev_projects\mine\shared\Shared---Common-code-for-.net-and-MVC-3\Shared.Infr
 C:\_dev_projects\mine\shared\Shared---Common-code-for-.net-and-MVC-3\Shared.Infrastructure\obj\Debug\Shared.Infrastructure.csprojResolveAssemblyReference.cache
 C:\_dev_projects\mine\shared\Shared---Common-code-for-.net-and-MVC-3\Shared.Infrastructure\obj\Debug\Shared.Infrastructure.dll
 C:\_dev_projects\mine\shared\Shared---Common-code-for-.net-and-MVC-3\Shared.Infrastructure\obj\Debug\Shared.Infrastructure.pdb
+C:\_dev_projects\mine\shared\Shared---Common-code-for-.net-and-MVC-3\Shared.Infrastructure\bin\Debug\AutoMapper.dll
+C:\_dev_projects\mine\shared\Shared---Common-code-for-.net-and-MVC-3\Shared.Infrastructure\bin\Debug\AutoMapper.xml
