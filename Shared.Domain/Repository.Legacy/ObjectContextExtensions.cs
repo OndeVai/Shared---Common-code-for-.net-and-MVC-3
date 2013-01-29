@@ -18,8 +18,8 @@ namespace Shared.Domain.Repository.Legacy
             var container = context.MetadataWorkspace.GetEntityContainer(context.DefaultContainerName, DataSpace.CSpace);
             var baseType = GetBaseType(typeof (TEntity));
             var entitySet = container.BaseEntitySets
-                .Where(item => item.ElementType.Name.Equals(baseType.Name))
-                .FirstOrDefault();
+                                     .Where(item => item.ElementType.Name.Equals(baseType.Name))
+                                     .FirstOrDefault();
 
             return entitySet;
         }

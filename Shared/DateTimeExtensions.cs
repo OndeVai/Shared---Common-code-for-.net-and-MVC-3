@@ -9,9 +9,9 @@ namespace Shared
     public static class DateTimeExtensions
     {
         /// <summary>
-        ///   First tick of the day.
+        ///     First tick of the day.
         /// </summary>
-        /// <param name = "date">The date.</param>
+        /// <param name="date">The date.</param>
         /// <returns></returns>
         public static DateTime DayMin(this DateTime date)
         {
@@ -19,9 +19,9 @@ namespace Shared
         }
 
         /// <summary>
-        ///   First tick of the day.
+        ///     First tick of the day.
         /// </summary>
-        /// <param name = "date">The date.</param>
+        /// <param name="date">The date.</param>
         /// <returns></returns>
         public static DateTime DateOnly(this DateTime date)
         {
@@ -29,9 +29,9 @@ namespace Shared
         }
 
         /// <summary>
-        ///   Last tick of the day.
+        ///     Last tick of the day.
         /// </summary>
-        /// <param name = "date">The date.</param>
+        /// <param name="date">The date.</param>
         /// <returns></returns>
         public static DateTime DayMax(this DateTime date)
         {

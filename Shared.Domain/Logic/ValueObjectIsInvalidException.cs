@@ -1,4 +1,8 @@
-﻿using System;
+﻿#region
+
+using System;
+
+#endregion
 
 namespace Shared.Domain.Logic
 {
@@ -7,7 +11,6 @@ namespace Shared.Domain.Logic
         public ValueObjectIsInvalidException(string message)
             : base(message)
         {
-
         }
     }
 }

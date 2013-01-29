@@ -1,4 +1,4 @@
-﻿namespace Shared.Infrastructure.Location.Dto
+﻿namespace Shared.Infrastructure.Dto.Location
 {
     public class State
     {

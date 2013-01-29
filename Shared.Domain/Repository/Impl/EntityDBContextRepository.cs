@@ -1,6 +1,10 @@
+#region
+
 using System.Data.Entity;
 using System.Linq;
 using Shared.Domain.Logic;
+
+#endregion
 
 namespace Shared.Domain.Repository.Impl
 {

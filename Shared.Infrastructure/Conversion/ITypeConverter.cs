@@ -1,12 +1,16 @@
-﻿using System.Collections.Generic;
+﻿#region
+
+using System.Collections.Generic;
+
+#endregion
 
 namespace Shared.Infrastructure.Conversion
 {
-    public interface ITypeConverter<TDto,TModel>
+    public interface ITypeConverter<TDtoSummary, TDtoDetail, TModel>
     {
-        TDto ToDto(TModel model);
-        TModel ToModel(TDto dto);
-        List<TDto> ToDtos(List<TModel> models);
-        List<TModel> ToModels(List<TDto> dtos);
+        TDtoDetail ToDto(TModel model);
+        TModel ToModel(TDtoDetail dto);
+        List<TDtoSummary> ToDtos(List<TModel> models);
+        List<TModel> ToModels(List<TDtoSummary> dtos);
     }
 }

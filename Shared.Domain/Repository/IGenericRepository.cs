@@ -1,13 +1,16 @@
-﻿using System;
+﻿#region
+
+using System;
 using System.Linq;
 using System.Linq.Expressions;
 using Shared.Domain.Logic;
 
-namespace Shared.Domain.Repository {
+#endregion
 
+namespace Shared.Domain.Repository
+{
     public interface IGenericRepository<TModel> : IDisposable where TModel : class, IAggregateRoot
     {
-
         int GetCount();
         IQueryable<TModel> GetAll();
         IQueryable<TModel> FindBy(Expression<Func<TModel, bool>> predicate);

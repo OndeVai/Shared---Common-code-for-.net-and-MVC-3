@@ -13,7 +13,7 @@ namespace Shared.Domain.Logic
         private readonly StringBuilder _brokenRulesText;
 
         public BusinessRuleException(string rule)
-            : this("", new[] { new BusinessRule(rule) })
+            : this("", new[] {new BusinessRule(rule)})
         {
         }
 

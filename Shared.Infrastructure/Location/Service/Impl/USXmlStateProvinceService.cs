@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
 using Shared.Infrastructure.Caching.Adapters;
-using Shared.Infrastructure.Location.Dto;
+using Shared.Infrastructure.Dto.Location;
 
 #endregion
 
@@ -44,9 +44,11 @@ namespace Shared.Infrastructure.Location.Service.Impl
 
             if (string.IsNullOrWhiteSpace(ResourcePath))
             {
-                var statesXmlPath = GetType().Assembly.GetManifestResourceNames().FirstOrDefault(s => s.Contains("States.xml"));
+                var statesXmlPath =
+                    GetType().Assembly.GetManifestResourceNames().FirstOrDefault(s => s.Contains("States.xml"));
 
-                if (string.IsNullOrWhiteSpace(statesXmlPath)) throw new InvalidOperationException("States resource not found");
+                if (string.IsNullOrWhiteSpace(statesXmlPath))
+                    throw new InvalidOperationException("States resource not found");
 
                 using (var stream = GetType().Assembly.GetManifestResourceStream(statesXmlPath))
                 {
@@ -62,9 +64,11 @@ namespace Shared.Infrastructure.Location.Service.Impl
             if (statesXml.Root == null) throw new InvalidOperationException("States data not not resolved");
 
             return statesXml.Root.Elements()
-                .Select(stateEle => new State((int) stateEle.Attribute("Id"),
-                                              (string) stateEle.Attribute("NameAbbr"),
-                                              (string) stateEle.Attribute("NameFull"))).OrderBy(s => s.Id).ToList();
+                            .Select(stateEle => new State((int) stateEle.Attribute("Id"),
+                                                          (string) stateEle.Attribute("NameAbbr"),
+                                                          (string) stateEle.Attribute("NameFull")))
+                            .OrderBy(s => s.Id)
+                            .ToList();
         }
     }
 }

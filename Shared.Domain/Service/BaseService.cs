@@ -1,5 +1,9 @@
+#region
+
 using Shared.Domain.Logic;
 using Shared.Domain.Repository;
+
+#endregion
 
 namespace Shared.Domain.Service
 {
@@ -7,11 +11,12 @@ namespace Shared.Domain.Service
         where T : EntityBase, IAggregateRoot
     {
         protected readonly IEntityRepository<T> EntityRepository;
-        protected readonly IUnitOfWork UnitOfWork;
         protected readonly IEntityValidator EntityValidator;
+        protected readonly IUnitOfWork UnitOfWork;
         private readonly IEntityMutator<T> _mutator;
 
-        protected BaseService(IEntityRepository<T> entityRepository, IUnitOfWork unitOfWork, IEntityValidator entityValidator, IEntityMutator<T> mutator )
+        protected BaseService(IEntityRepository<T> entityRepository, IUnitOfWork unitOfWork,
+                              IEntityValidator entityValidator, IEntityMutator<T> mutator)
         {
             EntityRepository = entityRepository;
             UnitOfWork = unitOfWork;
@@ -28,7 +33,5 @@ namespace Shared.Domain.Service
                 UnitOfWork.Commit();
             }
         }
-
-        
     }
 }

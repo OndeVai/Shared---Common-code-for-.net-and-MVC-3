@@ -11,14 +11,15 @@ namespace Shared.Linq
         public static IQueryable<TEntity> Page<TEntity>(this IQueryable<TEntity> queryable, int pageNumber, int pageSize)
         {
             return queryable
-                .Skip(pageSize * (pageNumber - 1))
+                .Skip(pageSize*(pageNumber - 1))
                 .Take(pageSize);
         }
 
-        public static IQueryable<TEntity> Page<TEntity>(this IOrderedQueryable<TEntity> queryable, int pageNumber, int pageSize)
+        public static IQueryable<TEntity> Page<TEntity>(this IOrderedQueryable<TEntity> queryable, int pageNumber,
+                                                        int pageSize)
         {
             return queryable
-                .Skip(pageSize * (pageNumber-1))
+                .Skip(pageSize*(pageNumber - 1))
                 .Take(pageSize);
         }
     }

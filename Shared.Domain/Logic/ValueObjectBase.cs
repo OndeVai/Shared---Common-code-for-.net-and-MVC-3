@@ -8,7 +8,6 @@ using System.Text;
 
 namespace Shared.Domain.Logic
 {
-
     public abstract class ValueObjectBase
     {
         private readonly List<BusinessRule> _brokenRules = new List<BusinessRule>();

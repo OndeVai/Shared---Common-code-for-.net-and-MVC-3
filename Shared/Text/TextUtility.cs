@@ -10,12 +10,12 @@ namespace Shared.Text
 {
     internal static class TextUtility
     {
-        const string HTML_TAG_PATTERN = "<(.|\n)+?>";
+        private const string HTML_TAG_PATTERN = "<(.|\n)+?>";
 
         public static string StripHtml(string inputString)
         {
             return Regex.Replace
-              (inputString, HTML_TAG_PATTERN, string.Empty);
+                (inputString, HTML_TAG_PATTERN, string.Empty);
         }
 
         public static string ToLowerTrim(string input)
@@ -31,7 +31,7 @@ namespace Shared.Text
             var r = new Regex(regexStr, RegexOptions.IgnoreCase | RegexOptions.CultureInvariant | RegexOptions.Compiled);
             return r.Replace(input, string.Empty).Replace(@" ", replaceWhitespace);
         }
-       
+
 
         public static string GetAbbreviatedWithFragment(string thisString, int len, string append)
         {
@@ -72,10 +72,10 @@ namespace Shared.Text
         }
 
         /// <summary>
-        ///   Generates a random string with the given length
+        ///     Generates a random string with the given length
         /// </summary>
-        /// <param name = "size">Size of the string</param>
-        /// <param name = "lowerCase">If true, generate lowercase string</param>
+        /// <param name="size">Size of the string</param>
+        /// <param name="lowerCase">If true, generate lowercase string</param>
         /// <returns>Random string</returns>
         public static string RandomString(int size, bool lowerCase)
         {

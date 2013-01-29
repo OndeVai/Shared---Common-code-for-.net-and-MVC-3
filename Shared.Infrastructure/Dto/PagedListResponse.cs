@@ -1,5 +1,9 @@
+#region
+
 using System.Collections.Generic;
-using Shared.Infrastructure.Navigation.Dto;
+using Shared.Infrastructure.Dto.Navigation;
+
+#endregion
 
 namespace Shared.Infrastructure.Dto
 {

@@ -8,11 +8,11 @@ using System.Data.Objects;
 
 namespace Shared.Domain.Repository.Legacy
 {
-    public abstract class BaseObjectContextRepository<T,TContext> : IContextLifetimeManager where TContext : ObjectContext where T : class
+    public abstract class BaseObjectContextRepository<T, TContext> : IContextLifetimeManager
+        where TContext : ObjectContext where T : class
     {
-
         protected abstract TContext CreateContext();
-        
+
 
         protected void Update(T entity, ObjectContext context)
         {
@@ -41,7 +41,5 @@ namespace Shared.Domain.Repository.Legacy
         public bool KeepContextAlive { get; set; }
 
         #endregion
-
-       
     }
 }

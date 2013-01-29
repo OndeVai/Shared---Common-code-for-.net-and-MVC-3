@@ -1,6 +1,6 @@
 #region
 
-using Shared.Infrastructure.Navigation.Dto;
+using Shared.Infrastructure.Dto.Navigation;
 
 #endregion
 

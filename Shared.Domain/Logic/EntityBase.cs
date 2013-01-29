@@ -1,10 +1,13 @@
-﻿using System.Collections.Generic;
+﻿#region
+
+using System.Collections.Generic;
+
+#endregion
 
 namespace Shared.Domain.Logic
 {
     public abstract class EntityBase
     {
-
         private readonly List<BusinessRule> _brokenRules = new List<BusinessRule>();
 
         protected abstract void Validate();
@@ -23,7 +26,7 @@ namespace Shared.Domain.Logic
 
         protected void AddBrokenRule(string rule)
         {
-           AddBrokenRule(new BusinessRule(rule));
+            AddBrokenRule(new BusinessRule(rule));
         }
     }
 
@@ -37,7 +40,5 @@ namespace Shared.Domain.Logic
         }
 
         public virtual TID Id { get; protected set; }
-
     }
-
 }

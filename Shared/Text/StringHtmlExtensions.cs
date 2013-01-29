@@ -1,10 +1,4 @@
-﻿#region
-
-
-
-#endregion
-
-namespace Shared.Text
+﻿namespace Shared.Text
 {
     public static class StringExtensionsHtml
     {

@@ -1,4 +1,8 @@
+#region
+
 using Shared.Infrastructure.Dto;
+
+#endregion
 
 namespace Shared.Infrastructure.Query
 {

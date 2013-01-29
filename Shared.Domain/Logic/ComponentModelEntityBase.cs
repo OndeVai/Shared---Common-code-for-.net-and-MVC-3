@@ -1,5 +1,9 @@
+#region
+
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+
+#endregion
 
 namespace Shared.Domain.Logic
 {
@@ -10,9 +14,14 @@ namespace Shared.Domain.Logic
         {
         }
 
+        protected bool IsNew
+        {
+            get { return Id.Equals(default(TID)); }
+        }
+
         protected override void Validate()
         {
-           Validate(this);
+            Validate(this);
         }
 
         protected void Validate(object target)
@@ -24,11 +33,6 @@ namespace Shared.Domain.Logic
             {
                 AddBrokenRule(new BusinessRule(validationResult.ErrorMessage));
             }
-        }
-
-        protected bool IsNew
-        {
-            get { return Id.Equals(default(TID)); }
         }
     }
 }

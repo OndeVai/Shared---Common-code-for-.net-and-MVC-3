@@ -1,4 +1,8 @@
-using Shared.Infrastructure.Navigation.Dto;
+#region
+
+using Shared.Infrastructure.Dto.Navigation;
+
+#endregion
 
 namespace Shared.Infrastructure.Dto
 {
