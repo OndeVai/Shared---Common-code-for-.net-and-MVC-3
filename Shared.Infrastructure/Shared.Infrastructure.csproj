@@ -76,12 +76,10 @@
     <Compile Include="Dto\PagingListRequest.cs" />
     <Compile Include="Dto\PagedListResponse.cs" />
     <Compile Include="Dto\UidRequest.cs" />
-    <Compile Include="Query\IQueryConverter.cs" />
     <Compile Include="Query\IQuery.cs" />
-    <Compile Include="Query\Impl\SortedPagedQuery.cs" />
+    <Compile Include="Query\Impl\SortedPagedQueryAdapter.cs" />
     <Compile Include="Query\IApplicationQueryService.cs" />
     <Compile Include="Transaction\IApplicationTransactionService.cs" />
-    <Compile Include="Query\Impl\QueryConverter.cs" />
     <Compile Include="Dto\SaveRequest.cs" />
     <Compile Include="Dto\SaveResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

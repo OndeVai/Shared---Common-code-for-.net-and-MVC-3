@@ -12,7 +12,7 @@ using Shared.Linq;
 namespace Shared.Infrastructure.Query.Impl
 {
     //todo decorator pattern paged(sorted(base))
-    public abstract class SortedPagedQuery<TResult, TSortBy> : IQuery<TResult, TSortBy>
+    public abstract class SortedPagedQueryAdapter<TResult, TSortBy> : IQuery<TResult, TSortBy>
     {
         public IEnumerable<TResult> Execute(PagingListRequest<TSortBy> pagingListRequest)
         {

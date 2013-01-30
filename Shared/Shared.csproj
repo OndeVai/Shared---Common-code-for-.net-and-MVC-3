@@ -51,6 +51,7 @@
     <Compile Include="Diagnostics\ILoggerAdapter.cs" />
     <Compile Include="DoubleExtensions.cs" />
     <Compile Include="IO\ZipFile.cs" />
+    <Compile Include="Linq\BinaryExpressionExtenstions.cs" />
     <Compile Include="Linq\OrderedQueryableExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reflection\ExpressionExtensions.cs" />

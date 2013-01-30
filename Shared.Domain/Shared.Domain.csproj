@@ -60,6 +60,8 @@
     <Compile Include="Logic\ValueObjectBase.cs" />
     <Compile Include="Logic\ValueObjectIsInvalidException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Query\ISortedPagedQuery.cs" />
+    <Compile Include="Query\Impl\SortedPagedQuery.cs" />
     <Compile Include="Repository.Legacy\BaseObjectContextRepository.cs" />
     <Compile Include="Repository.Legacy\IContextLifetimeManager.cs" />
     <Compile Include="Repository.Legacy\ObjectContextExtensions.cs" />
