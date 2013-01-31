@@ -1,8 +1,8 @@
 #region
 
 using System;
-using System.Text;
 using WebApi.Hal;
+using System.Linq;
 
 #endregion
 
@@ -10,55 +10,100 @@ namespace Shared.Infrastructure.Dto.Hal
 {
     public class TokenizedLink : Link
     {
-        private readonly StringBuilder _sbLink;
+        private readonly int _hrefQueryStringStartPosition = -1;
+        private readonly string _origHref;
+        private const string HrefSlash = @"/";
+        private const string HrefQueryStringStart = @"?";
+        private const string HrefQueryStringAppend = @"&";
+        private readonly string _hrefQueryString;
 
-        public TokenizedLink(string baseHref, string rel)
+        public TokenizedLink(string rel, string href)
+            : base(rel, href)
         {
-            Rel = rel;
-            Href = baseHref;
-            _sbLink = new StringBuilder(baseHref);
+            _origHref = href;
+            _hrefQueryStringStartPosition = PositionInHref(HrefQueryStringStart);
+            _hrefQueryString = _hrefQueryStringStartPosition > -1 ? _origHref.Substring(_hrefQueryStringStartPosition) : string.Empty;
         }
 
-        public TokenizedLink AppendToken(string token, Func<string, object> substitution,
-                                         bool replaceIfNull = false, bool isQuerystring = false,
-                                         bool hasPrevious = false)
+        public TokenizedLink CreateLink(Func<string, object>[] substitutions, bool removeIfNull = false)
         {
-            _sbLink.Append(new HrefSegment(token, substitution, replaceIfNull, hasPrevious, isQuerystring));
-            Href = _sbLink.ToString();
+            foreach (var substitution in substitutions)
+            {
+                CreateLink(substitution, removeIfNull);
+            }
             return this;
         }
-    }
 
-    public class HrefSegment
-    {
-        private readonly bool _hasPrevious;
-        private readonly bool _isQuerystring;
-        private readonly bool _replaceIfNull;
-        private readonly Func<string, object> _substitution;
-        private readonly string _token;
-
-        public HrefSegment(string token, Func<string, object> substitution, bool replaceIfNull = false,
-                           bool hasPrevious = false, bool isQuerystring = false)
+        public TokenizedLink CreateLink(Func<string, object> substitution, bool removeIfNull = false)
         {
-            _isQuerystring = isQuerystring;
-            _token = token;
-            _substitution = substitution;
-            _replaceIfNull = replaceIfNull;
-            _hasPrevious = hasPrevious;
+
+            UpdateHref(substitution, removeIfNull);
+
+            return this;
         }
 
-        public override string ToString()
+        public TokenizedLink TemplateWithoutQuerystring()
         {
-            var val = _substitution(null);
+            Href = _origHref.Replace(_hrefQueryString, string.Empty);
+            return this;
+        }
+
+        private void UpdateHref(Func<string, object> substitution, bool removeIfNull)
+        {
+            var subName = substitution.Method.GetParameters()[0].Name.Trim('_');
+            var token = string.Format("{{{0}}}", subName);
+
+            if (PositionInHref(token) <= -1) return;
+
+            var val = substitution(null);
             var hasVal = val != null;
 
-            if (_replaceIfNull && !hasVal)
-                return string.Empty;
+            if (hasVal)
+            {
+                Href = CreateUri(substitution).ToString();
+                return;
+            }
 
-            var after = !_isQuerystring ? "/" : string.Empty;
-            var before = _isQuerystring ? (!_hasPrevious ? "?" : "&") : string.Empty;
-            var valResolved = hasVal ? new Link("", _token).CreateUri(_substitution).ToString() : _token;
-            return string.Format("{0}{1}{2}", before, valResolved, after);
+            if (!removeIfNull) return;
+
+            if (!IsQuerystring(token))
+                Href = Href.Replace(token + HrefSlash, string.Empty);
+            else
+            {
+                //remove querystring pairs if remove is true
+                if(string.IsNullOrWhiteSpace(_hrefQueryString))
+                    return;
+
+                var queryVals =
+                    _hrefQueryString.Split(new[] { HrefQueryStringStart, HrefQueryStringAppend },
+                                       StringSplitOptions.None).ToList();
+                queryVals.RemoveAll(v => v.Contains(token));
+
+                var newQueryVals = string.Join(HrefQueryStringAppend, queryVals);
+
+                Href = Href.Replace(_hrefQueryString, string.Empty);
+                if (!string.IsNullOrWhiteSpace(newQueryVals))
+                    Href = Href + HrefQueryStringStart + newQueryVals;
+            }
         }
+
+
+        private bool IsQuerystring(string token)
+        {
+            if (_hrefQueryStringStartPosition < 0) return false;
+            return PositionInHref(token) > _hrefQueryStringStartPosition;
+        }
+
+        private int PositionInHref(string searchFor)
+        {
+            return PositionIn(searchFor, _origHref);
+        }
+
+        private static int PositionIn(string searchFor, string searchIn)
+        {
+            return searchIn.IndexOf(searchFor, StringComparison.Ordinal);
+        }
+
+
     }
 }
