@@ -15,7 +15,7 @@ namespace Shared.Domain.Query.Impl
         private Expression<Func<TEntity, bool>> _curExpression;
         public int PageNumber { get; set; }
         public int PageSize { get; set; }
-        public int Count { get; protected set; }
+        public int TotalSize { get; protected set; }
 
         public Expression<Func<TEntity, bool>> AsExpression()
         {
@@ -45,7 +45,7 @@ namespace Shared.Domain.Query.Impl
         {
             BuildCriteria();
             baseQuery = baseQuery.Where(AsExpression());
-            Count = baseQuery.Count();
+            TotalSize = baseQuery.Count();
             AdjustPaging();
             return Sort(baseQuery).Page(PageNumber, PageSize).ToList();
         }
@@ -53,10 +53,11 @@ namespace Shared.Domain.Query.Impl
 
         protected abstract IQueryable<TEntity> Sort(IQueryable<TEntity> baseQuery);
         protected abstract void BuildCriteria();
+        protected abstract void Validate();
 
         protected void AdjustPaging()
         {
-            var actualQueryCount = Count;
+            var actualQueryCount = TotalSize;
             var currentPage = PageNumber;
             var pageSize = PageSize;
             if (currentPage < 1) currentPage = 1;

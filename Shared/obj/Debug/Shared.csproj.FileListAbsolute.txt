@@ -5,6 +5,5 @@ C:\_custom\shared\shared_4.0\Shared\obj\Debug\Shared.dll
 C:\_custom\shared\shared_4.0\Shared\obj\Debug\Shared.pdb
 C:\_dev_projects\mine\shared\Shared---Common-code-for-.net-and-MVC-3\Shared\bin\Debug\Shared.dll
 C:\_dev_projects\mine\shared\Shared---Common-code-for-.net-and-MVC-3\Shared\bin\Debug\Shared.pdb
-C:\_dev_projects\mine\shared\Shared---Common-code-for-.net-and-MVC-3\Shared\obj\Debug\Shared.csprojResolveAssemblyReference.cache
 C:\_dev_projects\mine\shared\Shared---Common-code-for-.net-and-MVC-3\Shared\obj\Debug\Shared.dll
 C:\_dev_projects\mine\shared\Shared---Common-code-for-.net-and-MVC-3\Shared\obj\Debug\Shared.pdb

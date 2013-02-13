@@ -4,6 +4,6 @@
     {
         int PageNumber { get; }
         int PageSize { get; }
-        int Count { get; }
+        int TotalSize { get; }
     }
 }

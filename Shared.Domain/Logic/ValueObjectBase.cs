@@ -20,13 +20,11 @@ namespace Shared.Domain.Logic
         {
             _brokenRules.Clear();
             Validate();
-            if (_brokenRules.Any())
-            {
-                var issues = new StringBuilder();
-                foreach (var businessRule in _brokenRules) issues.AppendLine(businessRule.Rule);
+            if (!_brokenRules.Any()) return;
+            var issues = new StringBuilder();
+            foreach (var businessRule in _brokenRules) issues.AppendLine(businessRule.Rule);
 
-                throw new ValueObjectIsInvalidException(issues.ToString());
-            }
+            throw new ValueObjectIsInvalidException(issues.ToString());
         }
 
         protected void AddBrokenRule(BusinessRule businessRule)

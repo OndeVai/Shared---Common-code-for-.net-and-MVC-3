@@ -60,13 +60,9 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="WebApi.Hal">
-      <HintPath>..\..\..\donger1\Komparator\Api\packages\WebApi.Hal.1.0.0.0\lib\net40\WebApi.Hal.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conversion\ITypeConverter.cs" />
-    <Compile Include="Dto\Hal\TokenizedLink.cs" />
     <Compile Include="Dto\Location\State.cs" />
     <Compile Include="Location\Service\IStateProvinceService.cs" />
     <Compile Include="Location\Service\Impl\USXmlStateProvinceService.cs" />

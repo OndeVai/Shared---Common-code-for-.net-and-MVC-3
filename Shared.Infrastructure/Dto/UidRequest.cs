@@ -1,12 +1,19 @@
 ﻿namespace Shared.Infrastructure.Dto
 {
-    public class UidRequest
+    public class UidRequest<TUId>
     {
-        public UidRequest(int id)
+        public UidRequest(TUId id)
         {
             Id = id;
         }
 
-        public int Id { get; private set; }
+        public TUId Id { get; private set; }
+    }
+
+    public class UidRequest : UidRequest<int>
+    {
+        public UidRequest(int id) : base(id)
+        {
+        }
     }
 }

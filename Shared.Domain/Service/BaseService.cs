@@ -24,7 +24,7 @@ namespace Shared.Domain.Service
             _mutator = mutator;
         }
 
-        public virtual void Save(T entity)
+        public virtual void ValidateAndSave(T entity)
         {
             if (EntityValidator.Validate(entity))
             {

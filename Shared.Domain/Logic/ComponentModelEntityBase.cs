@@ -14,7 +14,7 @@ namespace Shared.Domain.Logic
         {
         }
 
-        protected bool IsNew
+        public virtual bool IsNew
         {
             get { return Id.Equals(default(TID)); }
         }
