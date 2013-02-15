@@ -2,3 +2,4 @@ C:\_dev_projects\mine\shared\Shared---Common-code-for-.net-and-MVC-3\Shared.Net\
 C:\_dev_projects\mine\shared\Shared---Common-code-for-.net-and-MVC-3\Shared.Net\bin\Debug\Shared.Net.pdb
 C:\_dev_projects\mine\shared\Shared---Common-code-for-.net-and-MVC-3\Shared.Net\obj\Debug\Shared.Net.dll
 C:\_dev_projects\mine\shared\Shared---Common-code-for-.net-and-MVC-3\Shared.Net\obj\Debug\Shared.Net.pdb
+C:\_dev_projects\mine\shared\Shared---Common-code-for-.net-and-MVC-3\Shared.Net\obj\Debug\Shared.Net.csprojResolveAssemblyReference.cache

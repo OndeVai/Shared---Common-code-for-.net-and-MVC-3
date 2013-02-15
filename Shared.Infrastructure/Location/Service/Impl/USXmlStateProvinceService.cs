@@ -5,7 +5,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
 using Shared.Infrastructure.Caching.Adapters;
-using Shared.Infrastructure.Dto.Location;
 
 #endregion
 

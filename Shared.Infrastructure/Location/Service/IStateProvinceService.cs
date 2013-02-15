@@ -1,7 +1,6 @@
 ﻿#region
 
 using System.Collections.Generic;
-using Shared.Infrastructure.Dto.Location;
 
 #endregion
 

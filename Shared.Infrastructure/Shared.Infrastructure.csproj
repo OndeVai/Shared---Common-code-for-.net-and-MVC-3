@@ -31,53 +31,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AutoMapper">
-      <HintPath>..\..\..\donger1\Komparator\Api\packages\AutoMapper.2.2.0\lib\net40\AutoMapper.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\..\donger1\Komparator\Api\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Linq.Dynamic">
-      <HintPath>..\..\..\projects\xylem\chiquita_qr\development\packages\System.Linq.Dynamic.1.0.0\lib\net40\System.Linq.Dynamic.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\..\..\donger1\Komparator\Api\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\..\donger1\Komparator\Api\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Http.WebRequest, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\..\..\donger1\Komparator\Api\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web" />
-    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\..\donger1\Komparator\Api\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
-    </Reference>
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Conversion\ITypeConverter.cs" />
-    <Compile Include="Dto\Location\State.cs" />
+    <Compile Include="Location\Service\State.cs" />
     <Compile Include="Location\Service\IStateProvinceService.cs" />
     <Compile Include="Location\Service\Impl\USXmlStateProvinceService.cs" />
-    <Compile Include="Dto\Navigation\PagingInfo.cs" />
-    <Compile Include="Dto\BasePagingList.cs" />
-    <Compile Include="Dto\IPagingListRequest.cs" />
-    <Compile Include="Dto\PagingListRequest.cs" />
-    <Compile Include="Dto\PagedListResponse.cs" />
-    <Compile Include="Dto\UidRequest.cs" />
-    <Compile Include="Query\IQuery.cs" />
-    <Compile Include="Query\Impl\SortedPagedQueryAdapter.cs" />
-    <Compile Include="Query\IApplicationQueryService.cs" />
-    <Compile Include="Transaction\IApplicationTransactionService.cs" />
-    <Compile Include="Dto\SaveRequest.cs" />
-    <Compile Include="Dto\SaveResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -85,17 +47,9 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\Shared.Domain\Shared.Domain.csproj">
-      <Project>{A04CE503-1339-4C5A-8363-C6B8A28D9448}</Project>
-      <Name>Shared.Domain</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Shared.Infrastructure.Caching\Shared.Infrastructure.Caching.csproj">
       <Project>{AD8FA08F-70DC-43B7-9CC2-67CB885A4989}</Project>
       <Name>Shared.Infrastructure.Caching</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Shared\Shared.csproj">
-      <Project>{A39B2E8C-B736-4EC2-90F8-0D006EE9F27F}</Project>
-      <Name>Shared</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
