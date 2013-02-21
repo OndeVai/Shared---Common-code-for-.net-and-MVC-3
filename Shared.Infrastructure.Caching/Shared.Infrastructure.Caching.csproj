@@ -41,6 +41,12 @@
     <Compile Include="Adapters\Impl\NullCacheAdapter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Shared\Shared.csproj">
+      <Project>{A39B2E8C-B736-4EC2-90F8-0D006EE9F27F}</Project>
+      <Name>Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

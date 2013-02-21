@@ -10,11 +10,11 @@ namespace Shared.Domain.Logic
     {
         #region IEntityValidator Members
 
-        public bool Validate(EntityBase entity)
+        public bool Validate(RulesEntityBase rulesEntity)
         {
-            if (entity.GetBrokenRules().Any())
+            if (rulesEntity.GetBrokenRules().Any())
             {
-                throw new BusinessRuleException("", entity.GetBrokenRules());
+                throw new BusinessRuleException("", rulesEntity.GetBrokenRules());
             }
             return true;
         }

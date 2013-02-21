@@ -6,14 +6,14 @@ using Shared.Application.Dto.Navigation;
 
 namespace Shared.Application.Dto
 {
-    public class PagingListRequest<TSortBy> : BasePagingList, IPagingListRequest<TSortBy>
+    public class Request<TSortBy> : PagingListBase, IPagingListRequest<TSortBy>
     {
-        public PagingListRequest(TSortBy sortBy, int currentPage, int itemsPerPage)
+        public Request(TSortBy sortBy, int currentPage, int itemsPerPage)
             : this(sortBy, new PagingInfo(currentPage, itemsPerPage))
         {
         }
 
-        public PagingListRequest(TSortBy sortBy, PagingInfo paging)
+        public Request(TSortBy sortBy, PagingInfo paging)
             : base(paging)
         {
             SortBy = sortBy;

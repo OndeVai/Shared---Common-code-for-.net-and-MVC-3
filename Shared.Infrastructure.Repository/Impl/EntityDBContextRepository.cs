@@ -9,7 +9,7 @@ using Shared.Domain.Logic;
 namespace Shared.Infrastructure.Repository.Impl
 {
     public abstract class EntityDBContextRepository<TDBContext, TModel> : DbContextRepository<TDBContext, TModel>
-        where TModel : EntityBase<int>, IAggregateRoot, new()
+        where TModel : RulesEntityBase<int>, IAggregateRoot, new()
         where TDBContext : DbContext, IUnitOfWork
     {
         protected EntityDBContextRepository(TDBContext entities)

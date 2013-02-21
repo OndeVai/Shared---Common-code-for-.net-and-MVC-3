@@ -2,6 +2,6 @@
 {
     public interface IEntityValidator
     {
-        bool Validate(EntityBase entity);
+        bool Validate(RulesEntityBase rulesEntity);
     }
 }

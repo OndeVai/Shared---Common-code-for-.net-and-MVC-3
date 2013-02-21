@@ -25,7 +25,7 @@ namespace Shared.Infrastructure.Caching.Adapters
             if (cachedItem == null)
             {
                 cachedItem = retrieveFunction();
-                _cache.Insert(key, cachedItem, null, DateTime.Now.AddSeconds(duration), TimeSpan.Zero);
+                _cache.Insert(key, cachedItem, null, SystemTime.Now().AddSeconds(duration), TimeSpan.Zero);
             }
             return cachedItem;
         }

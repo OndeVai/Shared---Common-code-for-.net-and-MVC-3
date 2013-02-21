@@ -1,7 +1,6 @@
 ﻿#region
 
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using Shared.Linq;
@@ -14,14 +13,14 @@ namespace Shared.Application.Query
     {
         private Expression<Func<TSource, bool>> _curExpression;
 
-        public IEnumerable<TResult> Execute(IQueryable<TSource> baseQuery)
+        public IQueryable<TResult> Execute(IQueryable<TSource> baseQuery)
         {
             Validate();
             BuildCriteria();
             baseQuery = baseQuery.Where(AsExpression());
             TotalSize = baseQuery.Count();
             AdjustPaging();
-            return Sort(baseQuery).Page(PageNumber, PageSize).AsEnumerable();
+            return Sort(baseQuery).Page(PageNumber, PageSize);
         }
 
         public int PageNumber { get; private set; }

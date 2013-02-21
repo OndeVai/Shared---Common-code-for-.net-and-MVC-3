@@ -7,7 +7,7 @@ using Shared.Application.Dto.Navigation;
 
 namespace Shared.Application.Dto
 {
-    public class PagedListResponse<TSummary> : BasePagingList
+    public class PagedListResponse<TSummary> : PagingListBase
     {
         public PagedListResponse(List<TSummary> list, PagingInfo paging)
             : base(paging)

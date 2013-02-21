@@ -7,9 +7,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Shared.Domain.Logic
 {
-    public abstract class ComponentModelEntityBase<TID> : EntityBase<TID>
+    public abstract class ComponentModelRulesEntityBase<TID> : RulesEntityBase<TID>
     {
-        protected ComponentModelEntityBase(TID id)
+        protected ComponentModelRulesEntityBase(TID id)
             : base(id)
         {
         }

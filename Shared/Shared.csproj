@@ -46,6 +46,7 @@
     <Compile Include="Diagnostics\ILoggerAdapter.cs" />
     <Compile Include="Diagnostics\NLogLoggerAdapter.cs" />
     <Compile Include="DoubleExtensions.cs" />
+    <Compile Include="Enumeration.cs" />
     <Compile Include="IO\ZipFile.cs" />
     <Compile Include="Linq\BinaryExpressionExtenstions.cs" />
     <Compile Include="Linq\OrderedQueryableExtensions.cs" />
@@ -54,7 +55,6 @@
     <Compile Include="Security\IUserContextAdapter.cs" />
     <Compile Include="StringExtensions.cs" />
     <Compile Include="SystemTime.cs" />
-    <Compile Include="Text\StringExtensions.cs" />
     <Compile Include="Text\StringExtensionsHtml.cs" />
     <Compile Include="Text\TextUtility.cs" />
   </ItemGroup>

@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace Shared.Domain.Logic
 {
-    public abstract class EntityBase
+    public abstract class RulesEntityBase
     {
         private readonly List<BusinessRule> _brokenRules = new List<BusinessRule>();
 
@@ -30,9 +30,9 @@ namespace Shared.Domain.Logic
         }
     }
 
-    public abstract class EntityBase<TID> : EntityBase
+    public abstract class RulesEntityBase<TID> : RulesEntityBase
     {
-        protected EntityBase(TID id)
+        protected RulesEntityBase(TID id)
         {
             // ReSharper disable DoNotCallOverridableMethodsInConstructor
             Id = id;

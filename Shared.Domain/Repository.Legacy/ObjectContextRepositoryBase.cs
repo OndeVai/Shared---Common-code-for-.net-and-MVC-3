@@ -8,7 +8,7 @@ using System.Data.Objects;
 
 namespace Shared.Domain.Repository.Legacy
 {
-    public abstract class BaseObjectContextRepository<T, TContext> : IContextLifetimeManager
+    public abstract class ObjectContextRepositoryBase<T, TContext> : IContextLifetimeManager
         where TContext : ObjectContext where T : class
     {
         protected abstract TContext CreateContext();

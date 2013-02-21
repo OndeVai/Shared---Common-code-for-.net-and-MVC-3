@@ -35,11 +35,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conversion\ITypeConverter.cs" />
-    <Compile Include="Dto\BasePagingList.cs" />
+    <Compile Include="Dto\PagingListBase.cs" />
     <Compile Include="Dto\IPagingListRequest.cs" />
     <Compile Include="Dto\Navigation\PagingInfo.cs" />
     <Compile Include="Dto\PagedListResponse.cs" />
-    <Compile Include="Dto\PagingListRequest.cs" />
+    <Compile Include="Dto\Request.cs" />
     <Compile Include="Dto\SaveRequest.cs" />
     <Compile Include="Dto\SaveResponse.cs" />
     <Compile Include="Dto\UidRequest.cs" />
