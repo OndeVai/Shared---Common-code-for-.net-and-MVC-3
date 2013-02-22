@@ -1,9 +1,9 @@
-﻿namespace Shared.Application.Query
+﻿using Shared.Application.Dto.Navigation;
+
+namespace Shared.Application.Query
 {
     public interface ISortedPagedQuery
     {
-        int PageNumber { get; }
-        int PageSize { get; }
-        int TotalSize { get; }
+        PagingInfo Paging { get; }
     }
 }

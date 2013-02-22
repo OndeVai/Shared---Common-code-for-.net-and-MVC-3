@@ -3,6 +3,7 @@
 using System;
 using System.Linq;
 using System.Linq.Expressions;
+using Shared.Application.Dto.Navigation;
 using Shared.Linq;
 
 #endregion
@@ -11,21 +12,29 @@ namespace Shared.Application.Query
 {
     public abstract class SortedPagedQuery<TSource, TResult> : ISortedPagedQuery, IQuery<TSource, TResult>
     {
+
+        public SortedPagedQuery(PagingInfo paging)
+        {
+            Paging = paging;
+        }
+
         private Expression<Func<TSource, bool>> _curExpression;
 
         public IQueryable<TResult> Execute(IQueryable<TSource> baseQuery)
         {
             Validate();
-            BuildCriteria();
-            baseQuery = baseQuery.Where(AsExpression());
-            TotalSize = baseQuery.Count();
-            AdjustPaging();
-            return Sort(baseQuery).Page(PageNumber, PageSize);
+            BuildWhere();
+            var asExpression = AsExpression();
+
+            if (asExpression != null)
+                baseQuery = baseQuery.Where(asExpression);
+
+            var queryCount = baseQuery.Count();
+            AdjustPaging(queryCount);
+            return Sort(baseQuery).Page(Paging.CurrentPage, Paging.ItemsPerPage);
         }
 
-        public int PageNumber { get; private set; }
-        public int PageSize { get; private set; }
-        public int TotalSize { get; private set; }
+        public PagingInfo Paging { get; private set; }
 
         private Expression<Func<TSource, bool>> AsExpression()
         {
@@ -41,23 +50,11 @@ namespace Shared.Application.Query
 
         protected abstract void Validate();
         protected abstract IQueryable<TResult> Sort(IQueryable<TSource> baseQuery);
-        protected abstract void BuildCriteria();
+        protected abstract void BuildWhere();
 
-        private void AdjustPaging()
+        private void AdjustPaging(int queryCount)
         {
-            var actualQueryCount = TotalSize;
-            var currentPage = PageNumber;
-            var pageSize = PageSize;
-            if (currentPage < 1) currentPage = 1;
-            if (pageSize < 1) pageSize = 100;
-            if (pageSize > actualQueryCount) pageSize = actualQueryCount;
-            var totalPageCount = actualQueryCount <= 0 ? 0 : (int) Math.Ceiling((double) actualQueryCount/pageSize);
-
-            if (currentPage >= totalPageCount)
-                currentPage = totalPageCount;
-
-            PageNumber = currentPage;
-            PageSize = pageSize;
+           Paging.BuildActuals(queryCount);
         }
     }
 }

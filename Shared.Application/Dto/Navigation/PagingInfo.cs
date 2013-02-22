@@ -17,8 +17,11 @@ namespace Shared.Application.Dto.Navigation
         public PagingInfo(int currentPage, int itemsPerPage)
             : this()
         {
-            CurrentPage = currentPage;
-            ItemsPerPage = itemsPerPage;
+            if (currentPage < 1)
+                throw new ArgumentException("current page cannot be < 1", "currentPage");
+
+            CurrentPage = currentPage < 1 ? 1 : currentPage;
+            ItemsPerPage = itemsPerPage < 1 ? 1 : itemsPerPage;
         }
 
         public int CurrentPage { get; set; }
@@ -31,24 +34,22 @@ namespace Shared.Application.Dto.Navigation
         public void BuildActuals(int actualListCount)
         {
             var currentPage = CurrentPage;
-            var pageSize = ItemsPerPage;
-            if (currentPage < 1) currentPage = 1;
-            if (pageSize < 1) pageSize = 100;
-            if (pageSize > actualListCount) pageSize = actualListCount;
-            var totalPageCount = actualListCount <= 0 ? 0 : (int) Math.Ceiling((double) actualListCount/pageSize);
+        
+            var isEmptyList = actualListCount <= 0;
+
+            var totalPageCount = isEmptyList ? 0 : (int)Math.Ceiling((double)actualListCount / actualListCount);
 
             if (currentPage >= totalPageCount)
             {
                 NextPage = null;
-                currentPage = totalPageCount;
+                currentPage = isEmptyList ? 1 : totalPageCount;
             }
             else
                 NextPage = currentPage + 1;
 
-            PrevPage = currentPage > 1 ? (int?) (currentPage - 1) : null;
+            PrevPage = currentPage > 1 ? (int?)(currentPage - 1) : null;
 
             CurrentPage = currentPage;
-            ItemsPerPage = pageSize;
             TotalItems = actualListCount;
             TotalPages = totalPageCount;
         }
