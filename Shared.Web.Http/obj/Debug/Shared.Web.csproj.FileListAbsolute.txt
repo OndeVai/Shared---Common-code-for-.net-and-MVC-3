@@ -1,0 +1,8 @@
+C:\_dev_projects\mine\shared\Shared---Common-code-for-.net-and-MVC-3\Shared.Net\bin\Debug\Shared.Web.dll
+C:\_dev_projects\mine\shared\Shared---Common-code-for-.net-and-MVC-3\Shared.Net\bin\Debug\Shared.Web.pdb
+C:\_dev_projects\mine\shared\Shared---Common-code-for-.net-and-MVC-3\Shared.Net\bin\Debug\System.Web.Http.dll
+C:\_dev_projects\mine\shared\Shared---Common-code-for-.net-and-MVC-3\Shared.Net\bin\Debug\System.Net.Http.Formatting.dll
+C:\_dev_projects\mine\shared\Shared---Common-code-for-.net-and-MVC-3\Shared.Net\bin\Debug\System.Web.Http.xml
+C:\_dev_projects\mine\shared\Shared---Common-code-for-.net-and-MVC-3\Shared.Net\bin\Debug\System.Net.Http.Formatting.xml
+C:\_dev_projects\mine\shared\Shared---Common-code-for-.net-and-MVC-3\Shared.Net\obj\Debug\Shared.Web.dll
+C:\_dev_projects\mine\shared\Shared---Common-code-for-.net-and-MVC-3\Shared.Net\obj\Debug\Shared.Web.pdb

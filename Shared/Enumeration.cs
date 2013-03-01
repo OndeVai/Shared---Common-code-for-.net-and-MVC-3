@@ -1,7 +1,11 @@
-﻿using System;
+﻿#region
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+
+#endregion
 
 namespace Shared
 {
@@ -40,13 +44,15 @@ namespace Shared
             return DisplayName;
         }
 
-      
+
         public static IEnumerable<T> GetAll<T>() where T : Enumeration, new()
         {
             var type = typeof (T);
             var fields = type.GetFields(BindingFlags.Public | BindingFlags.Static | BindingFlags.DeclaredOnly);
 
-            return (fields.Select(info => new {info, instance = new T()}).Select(@t => @t.info.GetValue(@t.instance))).OfType<T>();
+            return
+                (fields.Select(info => new {info, instance = new T()}).Select(@t => @t.info.GetValue(@t.instance)))
+                    .OfType<T>();
         }
 
         public static bool Contains<T>(T item) where T : Enumeration, new()
@@ -92,7 +98,8 @@ namespace Shared
             return matchingItem;
         }
 
-        private static T Parse<T, TK>(TK value, string description, Func<T, bool> predicate) where T : Enumeration, new()
+        private static T Parse<T, TK>(TK value, string description, Func<T, bool> predicate)
+            where T : Enumeration, new()
         {
             var matchingItem = GetAll<T>().FirstOrDefault(predicate);
 

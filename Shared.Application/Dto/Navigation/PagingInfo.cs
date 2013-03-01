@@ -34,10 +34,10 @@ namespace Shared.Application.Dto.Navigation
         public void BuildActuals(int actualListCount)
         {
             var currentPage = CurrentPage;
-        
+
             var isEmptyList = actualListCount <= 0;
 
-            var totalPageCount = isEmptyList ? 0 : (int)Math.Ceiling((double)actualListCount / actualListCount);
+            var totalPageCount = isEmptyList ? 0 : (int) Math.Ceiling((double) actualListCount/ItemsPerPage);
 
             if (currentPage >= totalPageCount)
             {
@@ -47,7 +47,7 @@ namespace Shared.Application.Dto.Navigation
             else
                 NextPage = currentPage + 1;
 
-            PrevPage = currentPage > 1 ? (int?)(currentPage - 1) : null;
+            PrevPage = currentPage > 1 ? (int?) (currentPage - 1) : null;
 
             CurrentPage = currentPage;
             TotalItems = actualListCount;

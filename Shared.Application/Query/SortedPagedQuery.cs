@@ -12,13 +12,17 @@ namespace Shared.Application.Query
 {
     public abstract class SortedPagedQuery<TSource, TResult> : ISortedPagedQuery, IQuery<TSource, TResult>
     {
+        private Expression<Func<TSource, bool>> _curExpression;
+
+        protected SortedPagedQuery()
+        {
+            
+        }
 
         public SortedPagedQuery(PagingInfo paging)
         {
             Paging = paging;
         }
-
-        private Expression<Func<TSource, bool>> _curExpression;
 
         public IQueryable<TResult> Execute(IQueryable<TSource> baseQuery)
         {
@@ -54,7 +58,7 @@ namespace Shared.Application.Query
 
         private void AdjustPaging(int queryCount)
         {
-           Paging.BuildActuals(queryCount);
+            Paging.BuildActuals(queryCount);
         }
     }
 }

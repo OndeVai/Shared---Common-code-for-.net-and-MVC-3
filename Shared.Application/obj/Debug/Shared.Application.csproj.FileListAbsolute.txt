@@ -4,6 +4,6 @@ C:\_dev_projects\mine\shared\Shared---Common-code-for-.net-and-MVC-3\Shared.Appl
 C:\_dev_projects\mine\shared\Shared---Common-code-for-.net-and-MVC-3\Shared.Application\bin\Debug\NLog.dll
 C:\_dev_projects\mine\shared\Shared---Common-code-for-.net-and-MVC-3\Shared.Application\bin\Debug\ICSharpCode.SharpZipLib.dll
 C:\_dev_projects\mine\shared\Shared---Common-code-for-.net-and-MVC-3\Shared.Application\bin\Debug\Shared.pdb
+C:\_dev_projects\mine\shared\Shared---Common-code-for-.net-and-MVC-3\Shared.Application\obj\Debug\Shared.Application.csprojResolveAssemblyReference.cache
 C:\_dev_projects\mine\shared\Shared---Common-code-for-.net-and-MVC-3\Shared.Application\obj\Debug\Shared.Application.dll
 C:\_dev_projects\mine\shared\Shared---Common-code-for-.net-and-MVC-3\Shared.Application\obj\Debug\Shared.Application.pdb
-C:\_dev_projects\mine\shared\Shared---Common-code-for-.net-and-MVC-3\Shared.Application\obj\Debug\Shared.Application.csprojResolveAssemblyReference.cache

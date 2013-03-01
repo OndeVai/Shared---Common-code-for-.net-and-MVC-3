@@ -46,6 +46,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Query\IQuery.cs" />
     <Compile Include="Query\ISortedPagedQuery.cs" />
+    <Compile Include="Query\QueryInvalidException.cs" />
     <Compile Include="Query\SortedPagedQuery.cs" />
     <Compile Include="Service\IApplicationTransactionService.cs" />
   </ItemGroup>

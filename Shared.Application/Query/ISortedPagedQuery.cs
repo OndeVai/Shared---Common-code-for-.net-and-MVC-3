@@ -1,4 +1,8 @@
-﻿using Shared.Application.Dto.Navigation;
+﻿#region
+
+using Shared.Application.Dto.Navigation;
+
+#endregion
 
 namespace Shared.Application.Query
 {

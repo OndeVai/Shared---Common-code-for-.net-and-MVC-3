@@ -4,7 +4,7 @@ using System.Net.Http;
 
 #endregion
 
-namespace Shared.Net.Http
+namespace Shared.Web.Http
 {
     public static class HttpRequestMessageExtensions
     {
