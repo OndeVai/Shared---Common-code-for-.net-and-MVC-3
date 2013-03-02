@@ -16,7 +16,6 @@ namespace Shared.Application.Query
 
         protected SortedPagedQuery()
         {
-            
         }
 
         public SortedPagedQuery(PagingInfo paging)

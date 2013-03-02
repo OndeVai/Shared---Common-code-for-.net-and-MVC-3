@@ -1,10 +1,8 @@
 ﻿#region
 
-
+using System.Web.Http.Routing;
 
 #endregion
-
-using System.Web.Http.Routing;
 
 namespace Shared.Web.Http
 {

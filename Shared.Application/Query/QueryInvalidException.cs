@@ -1,4 +1,8 @@
-﻿using System;
+﻿#region
+
+using System;
+
+#endregion
 
 namespace Shared.Application.Query
 {
@@ -6,7 +10,6 @@ namespace Shared.Application.Query
     {
         public QueryInvalidException(string message) : base(message)
         {
-            
         }
     }
 }

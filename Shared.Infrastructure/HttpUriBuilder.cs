@@ -9,13 +9,6 @@ namespace Shared.Infrastructure
 {
     public class HttpUriBuilder : IUriBuilder
     {
-        private readonly HttpContextBase _httpContext;
-
-        public HttpUriBuilder(HttpContextBase httpContext)
-        {
-            _httpContext = httpContext;
-        }
-
         public Uri ToAbsolute(string relativeUri)
         {
             return new Uri(ToAbsoluteUrl(relativeUri));
@@ -26,14 +19,15 @@ namespace Shared.Infrastructure
             return ToAbsolute(relativeUri.ToString());
         }
 
-        private string ToAbsoluteUrl(string relativeUrl)
+        private static string ToAbsoluteUrl(string relativeUrl)
         {
             if (string.IsNullOrEmpty(relativeUrl))
                 return relativeUrl;
-            var url = _httpContext.Request.Url;
-            if (url == null)
+            var httpContext = HttpContext.Current;
+            if (httpContext == null)
                 return relativeUrl;
 
+            var url = httpContext.Request.Url;
 
             if (relativeUrl.StartsWith("/"))
                 relativeUrl = relativeUrl.Insert(0, "~");
